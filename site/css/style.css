@@ -1,3 +1,22 @@
+.rangee1 img {
+    width: 165px;
+    height: 244.28px;
+}
+.text1{
+    float: left;
+  width: 100px;
+  margin: 0;
+}
+
+.text{
+    float: right;
+  width: 100px;
+  margin: 0;
+    
+}
+.padding{
+    margin:0; 
+}
 figure img {
   width: 100px;
 }
@@ -35,3 +54,4 @@ a {
     margin-left: 2px;
     vertical-align: middle;
 }
+
