@@ -24,4 +24,4 @@
 #### 14 juin
 
 1. Miriam   : 
-2. Michael  : Création du jumbotron avec ce code (https://bootsnipp.com/snippets/6d63) et finission de la section shop
+2. Michael  : Création du jumbotron avec ce code (https://bootsnipp.com/snippets/6d63) et de la section shop
