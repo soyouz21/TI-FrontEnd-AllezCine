@@ -20,7 +20,7 @@
       <div class="col-md-1 invisible"></div>
       <div class="col-md-10">
         <div class="row">
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-left">
             <figure>
               <img src="site/image/AlleZiné.png" class="img-fluid" alt="fakelogo">
             </figure>
@@ -31,7 +31,7 @@
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
           </div>
-          <div class="col-md-5 padding text-center">
+          <div class="col-md-5 padding text-right">
             <i class="fa fa-phone" aria-hidden="true"></i> (+0000) 123 345 653 <button class="btn btn-outline-succes my-2 my-sm-0" type="button" name="button">Login</button>
           </div>
         </div>
@@ -40,14 +40,13 @@
   </div>
   <div class="container oranges">
     <div class="row">
-      <div class="col-md-2 invisible"></div>
+      <div class="col-md-1 invisible"></div>
       <div class="col-md-8">
         <div class="container">
           <div class="row">
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="#">Link</a></li>
+                <li><a href="#">Home</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Films<b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -71,81 +70,72 @@
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
-            </div>            
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="container">
   </div>
-  </div>
-  </div>
-  </div>
- <div class="container">
-
-        <div class="row rangee1">
-
-            <div class="col-md-1 invisible" class=img-responsive></div>
-
-            <div class="col-md-2" class=img-responsive><img src="site/image/film/12YearsSlave.jpg">
-                <div>
-                    
-                    <!-- Trigger the modal with a button -->
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">12 Years a Slave</button>
-                    <div>
-                        <p class="text1">2010</p>
-                        <p class="text2">Romance</p>
+  <div class="container">
+    <div class="row rangee1">
+      <div class="col-md-1 invisible" class=img-responsive></div>
+      <div class="col-md-10">
+        <div class="container bordered space-between">
+          <!-- space-between means : display:flex and justify-content: space-between. Cela permet que les items ici les div contenant les img prennent tous l'espace disponible en créant alors des faux padding :) -->
+          <div class="text-center" class=img-responsive><img src="site/image/film/12YearsSlave.jpg">
+            <!-- Trigger the modal with a button -->
+            <div class="container">
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">12 Years a Slave</button>
+              <div>
+                <p class="text1">2010</p>
+                <p class="text2">Romance</p>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Modal Header</h4>
                     </div>
-                    
-                    
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="myModal" role="dialog">
-                        <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Modal Header</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Some text in the modal.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="modal-body">
+                      <p>Some text in the modal.</p>
                     </div>
-
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
                 </div>
-               
-             
-                
-
-
+              </div>
             </div>
+          </div>
 
+          <div class="text-center" class=img-responsive><img src="site/image/film/47metersDown.jpg">
+            <p>47 Meters Down</p>
+          </div>
 
+          <div class="text-center" class=img-responsive><img src="site/image/film/avengers2.jpg">
+            <p>Avengers</p>
+          </div>
 
-            <div class="col-md-2" class=img-responsive><img src="site/image/film/47metersDown.jpg"> 47 Meters Down
-            </div>
+          <div class="text-center" class=img-responsive><img src="site/image/film/baywatch.jpg">
+            <p>Baywatch</p>
+          </div>
 
-            <div class="col-md-2" class=img-responsive><img src="site/image/film/avengers2.jpg">Avengers</div>
-
-            <div class="col-md-2" class=img-responsive><img src="site/image/film/baywatch.jpg">Baywatch</div>
-
-            <div class="col-md-2" class=img-responsive><img src="site/image/film/casablanca.jpg">Casablanca</div>
-
+          <div class="text-center" class=img-responsive><img src="site/image/film/casablanca.jpg">
+            <p>Casablanca</p>
+          </div>
 
         </div>
+      </div>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="site/javascript/js.js"></script>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="site/javascript/js.js"></script>
 </body>
 
 </html>
