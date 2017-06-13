@@ -1,17 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Miriam Azzouz, Michael Mesmaeker">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" type="image/png" href="site/image/AlleZiné-fav.png" />
-  <link rel="stylesheet" href="site/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="site/css/style.css">
-  <title>AlleZiné</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Miriam Azzouz, Michael Mesmaeker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="site/image/AlleZiné-fav.png" />
+    <link rel="stylesheet" href="site/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="site/css/style.css">
+
+
+    <title>AlleZiné</title>
 </head>
+
 <body>
-<script src="site/jquery/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="site/javascript/js.js"></script>
+
+    <div class="container">
+
+        <div class="row rangee1">
+
+            <div class="col-md-1 invisible" class=img-responsive></div>
+
+            <div class="col-md-2" class=img-responsive><img src="site/image/film/12YearsSlave.jpg">
+                <div>
+                    
+                    <!-- Trigger the modal with a button -->
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">12 Years a Slave</button>
+                    <div>
+                        <p class="text1">2010</p>
+                        <p class="text2">Romance</p>
+                    </div>
+                    
+                    
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Modal Header</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Some text in the modal.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+               
+             
+                
+
+
+            </div>
+
+
+
+            <div class="col-md-2" class=img-responsive><img src="site/image/film/47metersDown.jpg"> 47 Meters Down
+            </div>
+
+            <div class="col-md-2" class=img-responsive><img src="site/image/film/avengers2.jpg">Avengers</div>
+
+            <div class="col-md-2" class=img-responsive><img src="site/image/film/baywatch.jpg">Baywatch</div>
+
+            <div class="col-md-2" class=img-responsive><img src="site/image/film/casablanca.jpg">Casablanca</div>
+
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="site/javascript/js.js"></script>
 </body>
+
 </html>
