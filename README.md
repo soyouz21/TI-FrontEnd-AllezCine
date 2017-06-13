@@ -19,4 +19,9 @@
 #### 13 juin
 
 1. Miriam   : Création de la section Featured Movies
-2. Michael  : Création du header (nav-logo, nav-bar, jumbotron).
+2. Michael  : Création du header (nav-logo, nav-bar, jumbotron). (fini le nav-logo, navbar)
+
+#### 14 juin
+
+1. Miriam   : 
+2. Michael  : Création du jumbotron avec ce code (https://bootsnipp.com/snippets/6d63) et finission de la section shop
