@@ -12,6 +12,6 @@
 ##### 13 juin
 ###### Recherche de contenu
 
-1. Miriam : Recherche de 9 + 18 films
-2. Michael : Recherche de 18 affiches de series + 5 affiches de film pour le jumbotron et recherche du Plug-in slider jumbotron
-           trouvé le plug-in pgwslider() (jquery).
+1. Miriam   : Recherche de 9 + 18 films
+2. Michael  : Recherche de 18 affiches de series + 5 affiches de film pour le jumbotron et recherche du Plug-in slider jumbotron
+              trouvé le plug-in pgwslider() (jquery).
