@@ -24,4 +24,4 @@
 ##### 14 juin
 
 1. Miriam   : 
-2. Michael  : Création du jumbotron et de la section shop. #ATTENTION style de la barre de recherche dans navlogo.
+2. Michael  : Création du jumbotron et de la section shop. **ATTENTION** style de la barre de recherche dans navlogo.
