@@ -1,117 +1,211 @@
-.rangee1 img {
-    width: 165px;
-    height: 244.28px;
-    padding-top: 20px;
+.display-none {
+  display: none;
 }
-.rangee1 {
-  padding-top: 10px;
-}
-.bordered{
-  border: 0.5px solid rgb(145, 145, 145);
-  border-radius: 20px 20px 20px 20px;
-}
-.space-between{
-  display: flex;
-  justify-content: space-between;
-}
-.text1{
-  float: left;
-  text-align: left;
-}
+    .rangee1 img {
+      width: 165px;
+      height: 244.28px;
+      padding-top: 20px;
+    }
 
-.text2{
-  text-align: right;
-}
-.padding{
-    margin:0;
-}
-figure img {
-  width: 100px;
-}
-.padding {
-  padding-top: 25px;
-}
-.orange {
-  background-color: orange;
-  width: 100%;
-  height: 4px;
-}
-.container {
-  padding: 0;
-  width: 100%;
-}
-.nav > li > a:hover, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
-  color:white;
-  background-color: black;
-}
-.oranges {
-  color: black;
-  background-color: rgb(228, 153, 64)
-}
-a {
-  color: black;
-}
-/* ligne de code pour le changer la fleche sur le menu déroulant en js */
-.caret-up {
-    width: 0;
-    height: 0;
-    border-left: 4px solid rgba(0, 0, 0, 0);
-    border-right: 4px solid rgba(0, 0, 0, 0);
-    border-bottom: 4px solid;
+    .rangee1 {
+      padding-top: 10px;
+    }
 
-    display: inline-block;
-    margin-left: 2px;
-    vertical-align: middle;
-}
+    .bordered {
+      border: 0.5px solid rgb(145, 145, 145);
+      border-radius: 20px 20px 20px 20px;
+    }
 
-/* Ligne de code pour le carrousel pour la section shop */
+    .space-between {
+      display: flex;
+      justify-content: space-between;
+    }
 
-.carousel-inner.onebyone-carosel { margin: auto; width:100%; }
-.onebyone-carosel .active.left { left: -33.33%; }
-.onebyone-carosel .active.right { left: 33.33%; }
-.onebyone-carosel .next { left: 33.33%; }
-.onebyone-carosel .prev { left: -33.33%; }
-#myCarousel .col-md-4{
-	position: relative;
-	min-height: 1px;
-	padding-right: 0;
-	padding-left: 0;
-}
-.carousel-control.right {
-   background-image:none !important;
-   filter:none !important;
-}
-#myCarousel{
-	margin-top:105px;
-}
-.carousel-control {
-	background-color: #cacaca  !important;
-	font-size: 1.5em;
-	height: 32px;
-	line-height: 1.4;
-	margin: -55px 2px 0px 1112px;
-	padding: 0px 0px;
-	width: 32px;
-	-webkit-transition: color .2s;
-	-moz-transition: color .2s;
-	-ms-transition: color .2s;
-	-0-transition: color .2s;
-	transition: color .2s;
-	border-radius: 3px;
-	opacity: 1 !important;
-}
-.carousel-control:hover{
-	opacity:0.8 !important;
-}
+    .text1 {
+      float: left;
+      text-align: left;
+    }
+    .text2 {
+      text-align: right;
+    }
+    /*ici commence le css de la featured movies de la 2eme série*/
+    .bouton {
+      display: block;
+    }
 
-.abab {
-	margin: -55px 38px 0px;
-	 background-image:none !important;
-   filter:none !important;
-}
+    .img-row img {
+      width: 165px;
+      height: 244.28px;
+      padding-top: 10px;
+    }
 
-.carousel-indicators{
-	top:260px;
-}
-i{
-    color:red;
+    .petitbouton {
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+
+    .padding {
+      margin: 0;
+    }
+
+    figure img {
+      width: 100px;
+    }
+
+    .padding {
+      padding-top: 25px;
+    }
+
+    .orange {
+      background-color: orange;
+      width: 100%;
+      height: 4px;
+    }
+
+    .container {
+      padding: 0;
+      width: 100%;
+    }
+
+    .nav>li>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+      color: white;
+      background-color: black;
+    }
+
+    .oranges {
+      color: black;
+      background-color: rgb(228, 153, 64)
+    }
+
+    a {
+      color: black;
+    }
+    /* ligne de code pour le changer la fleche sur le menu déroulant en js */
+
+    .caret-up {
+      width: 0;
+      height: 0;
+      border-left: 4px solid rgba(0, 0, 0, 0);
+      border-right: 4px solid rgba(0, 0, 0, 0);
+      border-bottom: 4px solid;
+      display: inline-block;
+      margin-left: 2px;
+      vertical-align: middle;
+    }
+    /* Ligne de code pour le carrousel pour la section shop */
+
+    .carousel-inner.onebyone-carosel {
+      margin: auto;
+      width: 100%;
+    }
+
+    .onebyone-carosel .active.left {
+      left: -33.33%;
+    }
+
+    .onebyone-carosel .active.right {
+      left: 33.33%;
+    }
+
+    .onebyone-carosel .next {
+      left: 33.33%;
+    }
+
+    .onebyone-carosel .prev {
+      left: -33.33%;
+    }
+
+    #myCarousel .col-md-4 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .carousel-control.right {
+      background-image: none !important;
+      filter: none !important;
+    }
+
+    #myCarousel {
+      margin-top: 105px;
+    }
+
+    .carousel-control {
+      background-color: #cacaca !important;
+      font-size: 1.5em;
+      height: 32px;
+      line-height: 1.4;
+      margin: -55px 2px 0px 1112px;
+      padding: 0px 0px;
+      width: 32px;
+      -webkit-transition: color .2s;
+      -moz-transition: color .2s;
+      -ms-transition: color .2s;
+      -0-transition: color .2s;
+      transition: color .2s;
+      border-radius: 3px;
+      opacity: 1 !important;
+    }
+
+    .carousel-control:hover {
+      opacity: 0.8 !important;
+    }
+
+    .abab {
+      margin: -55px 38px 0px;
+      background-image: none !important;
+      filter: none !important;
+    }
+
+    .carousel-indicators {
+      top: 260px;
+    }
+    /*Jumbotron*/
+
+    .jumbo {
+      border: 3px solid orange;
+    }
+
+    .mini-jumbo {
+      height: auto;
+    }
+
+    .mini-jumbo>li>a {
+      padding: 0;
+    }
+    .bloc-orange-titre{
+      width: 10px;
+      background-color: orange;
+      padding-left: 10px
+    }
+    .mini-jumbo img {
+      width: 100%;
+    }
+
+    .withoutbordered {
+      margin: 0;
+    }
+
+    .paddd {
+      padding: 0;
+    }
+
+    #myCarousel {
+      margin: 0;
+      float: left;
+    }
+
+    #myCarousel .nav a small {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #myCarousel .nav {
+      background: #eee;
+    }
+
+    #myCarousel .nav a {
+      border-radius: 0px;
+    }
