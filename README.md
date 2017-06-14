@@ -28,8 +28,8 @@
 
 ##### 15 juin
 
-**ATTENTION** style de la barre de recherche dans navlogo.
-**ATTENTION** Erreur minime au niveau des script Featured Movies.
+1. **ATTENTION** style de la barre de recherche dans navlogo.
+2. **ATTENTION** Erreur minime au niveau des script Featured Movies.
 
 1. Miriam   : 
 2. Michael  : Création de la partie shop
