@@ -23,5 +23,5 @@
 
 ##### 14 juin
 
-1. Miriam   : 
+1. Miriam   : Création de la section Featured Movies 2ème partie.
 2. Michael  : Création du jumbotron et de la section shop. **ATTENTION** style de la barre de recherche dans navlogo.

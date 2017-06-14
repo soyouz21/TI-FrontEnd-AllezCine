@@ -1,120 +1,177 @@
-.rangee1 img {
+    .rangee1 img {
     width: 165px;
     height: 244.28px;
     padding-top: 20px;
 }
+
 .rangee1 {
-  padding-top: 10px;
-}
-.bordered{
-  border: 0.5px solid rgb(145, 145, 145);
-  border-radius: 20px 20px 20px 20px;
-}
-.space-between{
-  display: flex;
-  justify-content: space-between;
-}
-.text1{
-  float:left;
-  text-align: left;
+    padding-top: 10px;
 }
 
-.text2{
-  text-align: right;
+.bordered {
+    border: 0.5px solid rgb(145, 145, 145);
+    border-radius: 20px 20px 20px 20px;
 }
-.padding{
-    margin:0;
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
 }
-figure img {
-  width: 100px;
+
+.text1 {
+    float: left;
+    text-align: left;
+}
+
+.text2 {
+    text-align: right;
+}
+
+
+/*ici commence le css de la featured movies de la 2eme série*/
+
+.titre1 {
+    padding:
+}
+.bouton {
+    display: block;
+
+}
+
+.container img {
+    width: 165px;
+    height: 244.28px;
+    padding-top: 10px;
+}
+.petitbouton{
+    width: 100%;
+    height: auto;
+    
 }
 .padding {
-  padding-top: 25px;
+    margin: 0;
 }
+
+figure img {
+    width: 100px;
+}
+
+.padding {
+    padding-top: 25px;
+}
+
 .orange {
-  background-color: orange;
-  width: 100%;
-  height: 4px;
+    background-color: orange;
+    width: 100%;
+    height: 4px;
 }
+
 .container {
-  padding: 0;
-  width: 100%;
+    padding: 0;
+    width: 100%;
 }
-.nav > li > a:hover, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
-  color:white;
-  background-color: black;
+
+.nav>li>a:hover,
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    color: white;
+    background-color: black;
 }
+
 .oranges {
-  color: black;
-  background-color: rgb(228, 153, 64)
+    color: black;
+    background-color: rgb(228, 153, 64)
 }
+
 a {
-  color: black;
+    color: black;
 }
+
+
 /* ligne de code pour le changer la fleche sur le menu déroulant en js */
+
 .caret-up {
     width: 0;
     height: 0;
     border-left: 4px solid rgba(0, 0, 0, 0);
     border-right: 4px solid rgba(0, 0, 0, 0);
     border-bottom: 4px solid;
-
     display: inline-block;
     margin-left: 2px;
     vertical-align: middle;
 }
 
+
 /* Ligne de code pour le carrousel pour la section shop */
 
-.carousel-inner.onebyone-carosel { margin: auto; width:100%; }
-.onebyone-carosel .active.left { left: -33.33%; }
-.onebyone-carosel .active.right { left: 33.33%; }
-.onebyone-carosel .next { left: 33.33%; }
-.onebyone-carosel .prev { left: -33.33%; }
-#myCarousel .col-md-4{
-	position: relative;
-	min-height: 1px;
-	padding-right: 0;
-	padding-left: 0;
+.carousel-inner.onebyone-carosel {
+    margin: auto;
+    width: 100%;
 }
+
+.onebyone-carosel .active.left {
+    left: -33.33%;
+}
+
+.onebyone-carosel .active.right {
+    left: 33.33%;
+}
+
+.onebyone-carosel .next {
+    left: 33.33%;
+}
+
+.onebyone-carosel .prev {
+    left: -33.33%;
+}
+
+#myCarousel .col-md-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .carousel-control.right {
-   background-image:none !important;
-   filter:none !important;
+    background-image: none !important;
+    filter: none !important;
 }
-#myCarousel{
-	margin-top:105px;
+
+#myCarousel {
+    margin-top: 105px;
 }
+
 .carousel-control {
-	background-color: #cacaca  !important;
-	font-size: 1.5em;
-	height: 32px;
-	line-height: 1.4;
-	margin: -55px 2px 0px 1112px;
-	padding: 0px 0px;
-	width: 32px;
-	-webkit-transition: color .2s;
-	-moz-transition: color .2s;
-	-ms-transition: color .2s;
-	-0-transition: color .2s;
-	transition: color .2s;
-	border-radius: 3px;
-	opacity: 1 !important;
+    background-color: #cacaca !important;
+    font-size: 1.5em;
+    height: 32px;
+    line-height: 1.4;
+    margin: -55px 2px 0px 1112px;
+    padding: 0px 0px;
+    width: 32px;
+    -webkit-transition: color .2s;
+    -moz-transition: color .2s;
+    -ms-transition: color .2s;
+    -0-transition: color .2s;
+    transition: color .2s;
+    border-radius: 3px;
+    opacity: 1 !important;
 }
-.carousel-control:hover{
-	opacity:0.8 !important;
+
+.carousel-control:hover {
+    opacity: 0.8 !important;
 }
 
 .abab {
-	margin: -55px 38px 0px;
-	 background-image:none !important;
-   filter:none !important;
+    margin: -55px 38px 0px;
+    background-image: none !important;
+    filter: none !important;
 }
 
-.carousel-indicators{
-	top:260px;
+.carousel-indicators {
+    top: 260px;
 }
-i{
-    color:red;}
 
 /*Jumbotron*/
 .jumbo {
