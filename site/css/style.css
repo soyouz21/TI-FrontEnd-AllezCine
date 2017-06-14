@@ -15,7 +15,7 @@
   justify-content: space-between;
 }
 .text1{
-  float: left;
+  float:left;
   text-align: left;
 }
 
@@ -114,4 +114,39 @@ a {
 	top:260px;
 }
 i{
-    color:red;
+    color:red;}
+
+/*Jumbotron*/
+.jumbo {
+  border: 3px solid orange;
+}
+.mini-jumbo{
+  height: auto;
+}
+.mini-jumbo > li > a {
+  padding: 0;
+}
+.mini-jumbo img {
+  width: 100%;
+}
+.withoutbordered{
+  margin: 0;
+}
+.paddd{
+  padding: 0;
+}
+#myCarousel {
+  margin: 0;
+  float: left;
+}
+
+#myCarousel .nav a small {
+    display:flex;
+    flex-direction: row;
+}
+#myCarousel .nav {
+	background:#eee;
+}
+#myCarousel .nav a {
+    border-radius:0px;
+}
