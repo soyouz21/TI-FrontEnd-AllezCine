@@ -25,3 +25,11 @@
 
 1. Miriam   : Création de la section Featured Movies 2ème partie.
 2. Michael  : Création du jumbotron et de la section shop. **ATTENTION** style de la barre de recherche dans navlogo.
+
+##### 15 juin
+
+**ATTENTION** style de la barre de recherche dans navlogo.
+**ATTENTION** Erreur minime au niveau des script Featured Movies.
+
+1. Miriam   : 
+2. Michael  : Création de la partie shop
