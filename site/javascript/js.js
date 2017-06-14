@@ -15,26 +15,50 @@ $(function () {
 // code du carrousel de la section shop
 
 $(document).ready(function () {
+    	$('#myCarousel').carousel({
+			interval: 10000
+		})
+		$('.fdi-Carousel .item').each(function () {
+			var next = $(this).next();
+			if (!next.length) {
+				next = $(this).siblings(':first');
+			}
+			next.children(':first-child').clone().appendTo($(this));
+
+			if (next.next().length > 0) {
+				next.next().children(':first-child').clone().appendTo($(this));
+			}
+			else {
+				$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+			}
+		});
+	});
+
+  // Jumbotron
+
+  $(document).ready( function() {
     $('#myCarousel').carousel({
-        interval: 10000
-    })
-    $('.fdi-Carousel .item').each(function () {
-        var next = $(this).next();
-        if (!next.length) {
-            next = $(this).siblings(':first');
-        }
-        next.children(':first-child').clone().appendTo($(this));
+		interval:   4000
+	});
 
-        if (next.next().length > 0) {
-            next.next().children(':first-child').clone().appendTo($(this));
-        } else {
-            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-        }
-    });
+	var clickEvent = false;
+	$('#myCarousel').on('click', '.nav a', function() {
+			clickEvent = true;
+			$('.nav li').removeClass('active');
+			$(this).parent().addClass('active');
+	}).on('slid.bs.carousel', function(e) {
+		if(!clickEvent) {
+			var count = $('.nav').children().length -1;
+			var current = $('.nav li.active');
+			current.removeClass('active').next().addClass('active');
+			var id = parseInt(current.data('slide-to'));
+			if(count == id) {
+				$('.nav li').first().addClass('active');
+			}
+		}
+		clickEvent = false;
+	});
 });
-
-
-
 
 //BOUTON "Plus de films",fonction pour faire apparaître la 3 row au click du bouton "plus de films"
 
@@ -66,7 +90,6 @@ document.getElementById('SUSPENSE').onclick = function () {
     buttonDisplay('SUSPENSE', 'block');
 }
 
-
 //BOUTON qui fait apparaître ma 3row au click du bouton plus de films.
 //BOUTON "moins de films" qd on click sur "plus de films" 
 $(".3row").hide()
@@ -85,15 +108,3 @@ $("#moinsdefilms").click(function(){
     $("#moinsdefilms").hide();
     
 })
-
-
-
-
-
-
-
-
-/*
-       
-   
-*/
