@@ -14,26 +14,6 @@ $(function () {
 
 // code du carrousel de la section shop
 
-$(document).ready(function () {
-    	$('#myCarousel').carousel({
-			interval: 10000
-		})
-		$('.fdi-Carousel .item').each(function () {
-			var next = $(this).next();
-			if (!next.length) {
-				next = $(this).siblings(':first');
-			}
-			next.children(':first-child').clone().appendTo($(this));
-
-			if (next.next().length > 0) {
-				next.next().children(':first-child').clone().appendTo($(this));
-			}
-			else {
-				$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-			}
-		});
-	});
-
   // Jumbotron
 
   $(document).ready( function() {
@@ -69,22 +49,37 @@ function buttonDisplay(classe, valeur) {
     }
 }
 document.getElementById('ALL').onclick = function () {
+  $(".3row").show("slow");
+  $("#moinsdefilms").show();
+  $("#plusdefilms").hide();
     buttonDisplay('films', 'block');
 }
 document.getElementById('ACTIONS').onclick = function () {
+  $(".3row").show("slow");
+  $("#moinsdefilms").show();
+  $("#plusdefilms").hide();
     buttonDisplay('films', 'none');
     buttonDisplay('ACTIONS', 'block');
 }
 document.getElementById('HORREUR').onclick = function () {
+  $(".3row").show("slow");
+  $("#moinsdefilms").show();
+  $("#plusdefilms").hide();
     buttonDisplay('films', 'none');
     buttonDisplay('HORREUR', 'block');
 }
 
 document.getElementById('KIDS').onclick = function () {
+  $(".3row").show("slow");
+  $("#moinsdefilms").show();
+  $("#plusdefilms").hide();
     buttonDisplay('films', 'none');
     buttonDisplay('KIDS', 'block');
 }
 document.getElementById('SUSPENSE').onclick = function () {
+  $(".3row").show("slow");
+  $("#moinsdefilms").show();
+  $("#plusdefilms").hide();
     buttonDisplay('films', 'none');
     buttonDisplay('SUSPENSE', 'block');
 }
@@ -108,7 +103,7 @@ $("#moinsdefilms").click(function(){
 
 })
 //ici code cookies
- window.addEventListener("load", function() {
+ /* window.addEventListener("load", function() {
             window.cookieconsent.initialise({
                 "palette": {
                     "popup": {
@@ -127,5 +122,4 @@ $("#moinsdefilms").click(function(){
                     "link": "Lire +"
                 }
             })
-        });
-
+        }); */
