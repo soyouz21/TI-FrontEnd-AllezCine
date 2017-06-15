@@ -107,3 +107,24 @@ $("#moinsdefilms").click(function(){
     $("#moinsdefilms").hide();
 
 })
+//ici code cookies
+ window.addEventListener("load", function() {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#eb6c44",
+                        "text": "#ffffff"
+                    },
+                    "button": {
+                        "background": "#f5d948"
+                    }
+                },
+                "position": "top",
+                "static": true,
+                "content": {
+                    "message": "En poursuivant votre naviguation, vous acceptez le dépôt de cookies tiers destinés à vous proposer des vidéos, des boutons de partage, des remontées de contenus de plateformes sociales.",
+                    "dismiss": "J'accepte!",
+                    "link": "Lire +"
+                }
+            })
+        });
