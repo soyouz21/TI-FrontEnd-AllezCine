@@ -31,5 +31,5 @@
 1. **ATTENTION** style de la barre de recherche dans navlogo.
 2. **ATTENTION** Erreur minime au niveau des script Featured Movies.
 
-1. Miriam   : 
+1. Miriam   : Création de la section footer
 2. Michael  : Création de la partie shop
