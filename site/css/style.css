@@ -168,3 +168,47 @@ background: #333333;
     #myCarousel .nav a {
       border-radius: 0px;
     }
+/*ici commence le style du footer*/
+
+.btn {
+    position: relative;
+    height: 20px;
+    box-sizing: border-box;
+    padding: 1px 8px 1px 6px;
+    background-color: #1b95e0;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#google{
+    position: relative;
+    height: 20px;
+    box-sizing: border-box;
+    padding: 1px 8px 1px 6px;
+    background-color: red;
+    color: black;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+#moncercle{
+  background:orange;
+  border-radius:40%;
+  width:30px;
+  height:30px;
+  border:2px solid grey; 
+}
+
+
+.decallage{
+    margin-top: 10px;
+}
+
+#pwd,#subject{
+    width:456px;
+    display: flex;
+}
