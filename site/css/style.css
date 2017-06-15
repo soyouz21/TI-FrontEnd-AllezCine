@@ -4,7 +4,6 @@
     .rangee1 img {
       width: 165px;
       height: 244.28px;
-      padding-top: 20px;
     }
 
     .rangee1 {
@@ -94,79 +93,39 @@
       vertical-align: middle;
     }
     /* Ligne de code pour le carrousel pour la section shop */
-
-    .carousel-inner.onebyone-carosel {
-      margin: auto;
-      width: 100%;
+    .orange-bck{
+      background-color: orange;
+      height:298px;
     }
 
-    .onebyone-carosel .active.left {
-      left: -33.33%;
-    }
+    /* Removes the default 20px margin and creates some padding space for the indicators and controls */
+.carousel {
+    margin-bottom: 0;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+	left: -12px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: 0px;
+	margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+	background: #c0c0c0;
+}
+.carousel-indicators .active {
+background: #333333;
+}
 
-    .onebyone-carosel .active.right {
-      left: 33.33%;
-    }
 
-    .onebyone-carosel .next {
-      left: 33.33%;
-    }
-
-    .onebyone-carosel .prev {
-      left: -33.33%;
-    }
-
-    #myCarousel .col-md-4 {
-      position: relative;
-      min-height: 1px;
-      padding-right: 0;
-      padding-left: 0;
-    }
-
-    .carousel-control.right {
-      background-image: none !important;
-      filter: none !important;
-    }
-
-    #myCarousel {
-      margin-top: 105px;
-    }
-
-    .carousel-control {
-      background-color: #cacaca !important;
-      font-size: 1.5em;
-      height: 32px;
-      line-height: 1.4;
-      margin: -55px 2px 0px 1112px;
-      padding: 0px 0px;
-      width: 32px;
-      -webkit-transition: color .2s;
-      -moz-transition: color .2s;
-      -ms-transition: color .2s;
-      -0-transition: color .2s;
-      transition: color .2s;
-      border-radius: 3px;
-      opacity: 1 !important;
-    }
-
-    .carousel-control:hover {
-      opacity: 0.8 !important;
-    }
-
-    .abab {
-      margin: -55px 38px 0px;
-      background-image: none !important;
-      filter: none !important;
-    }
-
-    .carousel-indicators {
-      top: 260px;
-    }
     /*Jumbotron*/
-
-    .jumbo {
-      border: 3px solid orange;
-    }
 
     .mini-jumbo {
       height: auto;
