@@ -107,3 +107,10 @@ $("#moinsdefilms").click(function(){
     $("#moinsdefilms").hide();
 
 })
+
+// carrousel shop
+$(document).ready(function() {
+    $('#myCarousel').carousel({
+	    interval: 10000
+	})
+});
