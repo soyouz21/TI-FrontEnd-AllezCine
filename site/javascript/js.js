@@ -123,3 +123,20 @@ $("#moinsdefilms").click(function(){
                 }
             })
         }); */
+
+//ici fleche vers le haut
+var fleche=document.createElement("IMG");
+fleche.setAttribute("src","site/image/fleche.png");
+fleche.setAttribute("width","40px");
+fleche.setAttribute("height","40px");
+
+$(".lastbutton").after(fleche);
+
+fleche.click(function(){
+$('html, body').animate({scrollTop:$(the_id).offset().top}, 'slow');//return false;
+});
+
+$(fleche).click(function(){
+  $('html, body').animate({scrollTop: '0px'}, 1000);
+
+});
