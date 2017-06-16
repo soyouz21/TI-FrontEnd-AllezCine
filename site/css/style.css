@@ -1,107 +1,124 @@
 .display-none {
-  display: none;
+display: none;
 }
-    .rangee1 img {
-      width: 165px;
-      height: 244.28px;
-    }
+.rangee1 img {
+width: 165px;
+height: 244.28px;
+}
 
-    .rangee1 {
-      padding-top: 10px;
-    }
+.rangee1 {
+padding-top: 10px;
+}
 
-    .bordered {
-      border: 0.5px solid rgb(145, 145, 145);
-      border-radius: 20px 20px 20px 20px;
-    }
+.bordered {
+border: 0.5px solid rgb(145, 145, 145);
+border-radius: 20px 20px 20px 20px;
+}
 
-    .space-between {
-      display: flex;
-      justify-content: space-between;
-    }
+.space-between {
+display: flex;
+justify-content: space-between;
+}
 
-    .text1 {
-      float: left;
-      text-align: left;
-    }
-    .text2 {
-      text-align: right;
-    }
-    /*ici commence le css de la featured movies de la 2eme série*/
-    .bouton {
-      display: block;
-    }
+.text1 {
+float: left;
+text-align: left;
+}
+.text2 {
+text-align: right;
+}
+/*ici commence le css de la featured movies de la 2eme série*/
+.bouton {
+display: block;
+}
 
-    .img-row img {
-      width: 165px;
-      height: 244.28px;
-      padding-top: 10px;
-    }
+.img-row img {
+width: 165px;
+height: 244.28px;
+padding-top: 10px;
+}
 
-    .petitbouton {
-      width: 100%;
-      height: auto;
-      text-align: center;
-    }
+.petitbouton {
+width: 100%;
+height: auto;
+text-align: center;
+}
 
-    .padding {
-      margin: 0;
-    }
+.padding {
+margin: 0;
+}
 
-    figure img {
-      width: 100px;
-    }
+figure img {
+width: 100px;
+}
 
-    .padding {
-      padding-top: 25px;
-    }
+.padding {
+padding-top: 25px;
+}
 
-    .orange {
-      background-color: orange;
-      width: 100%;
-      height: 4px;
-    }
+.orange {
+background-color: orange;
+width: 100%;
+height: 4px;
+}
 
-    .container {
-      padding: 0;
-      width: 100%;
-    }
+.container {
+padding: 0;
+width: 100%;
+}
 
-    .nav>li>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-      color: white;
-      background-color: black;
-    }
+.nav>li>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+color: white;
+background-color: black;
+}
 
-    .oranges {
-      color: black;
-      background-color: rgb(228, 153, 64)
-    }
+.oranges {
+color: black;
+background-color: rgb(228, 153, 64)
+}
 
-    a {
-      color: black;
-    }
-    /* ligne de code pour le changer la fleche sur le menu déroulant en js */
+a {
+color: black;
+}
+/* ICI le code des 4 cadres en bas */
 
-    .caret-up {
-      width: 0;
-      height: 0;
-      border-left: 4px solid rgba(0, 0, 0, 0);
-      border-right: 4px solid rgba(0, 0, 0, 0);
-      border-bottom: 4px solid;
-      display: inline-block;
-      margin-left: 2px;
-      vertical-align: middle;
-    }
-    /* Ligne de code pour le carrousel pour la section shop */
-    .orange-bck{
-      background-color: orange;
-      height:298px;
-    }
-  
+.black-back{
+  background-color: rgb(44, 47, 66);
+  color:white;
+  height: 200px;
+}
+.div-center {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.div-gauche {
+  margin-right: 5px;
+}
+.div-droite {
+  margin-left: 5px;
+}
+/* ligne de code pour le changer la fleche sur le menu déroulant en js */
 
-    /* Removes the default 20px margin and creates some padding space for the indicators and controls */
+.caret-up {
+width: 0;
+height: 0;
+border-left: 4px solid rgba(0, 0, 0, 0);
+border-right: 4px solid rgba(0, 0, 0, 0);
+border-bottom: 4px solid;
+display: inline-block;
+margin-left: 2px;
+vertical-align: middle;
+}
+/* Ligne de code pour le carrousel pour la section shop */
+.orange-bck{
+background-color: orange;
+height:298px;
+}
+
+
+/* Removes the default 20px margin and creates some padding space for the indicators and controls */
 .carousel {
-    margin-bottom: 0;
+margin-bottom: 0;
 }
 /* Reposition the controls slightly */
 .carousel-control {
@@ -126,81 +143,80 @@ background: #333333;
 }
 
 
-    /*Jumbotron*/
+/*Jumbotron*/
 
-    .mini-jumbo {
-      height: auto;
-    }
+.mini-jumbo {
+height: auto;
+}
 
-    .mini-jumbo>li>a {
-      padding: 0;
-    }
-    .bloc-orange-titre{
-      width: 10px;
-      background-color: orange;
-      padding-left: 10px
-    }
-    .mini-jumbo img {
-      width: 100%;
-    }
+.mini-jumbo>li>a {
+padding: 0;
+}
+.bloc-orange-titre{
+width: 10px;
+background-color: orange;
+padding-left: 10px
+}
+.mini-jumbo img {
+width: 100%;
+}
 
-    .withoutbordered {
-      margin: 0;
-    }
+.withoutbordered {
+margin: 0;
+}
 
-    .paddd {
-      padding: 0;
-    }
+.paddd {
+padding: 0;
+}
 
-    #myCarousel {
-      margin: 0;
-      float: left;
-    }
+#myCarousel {
+margin: 0;
+float: left;
+}
 
-    #myCarousel .nav a small {
-      display: flex;
-      flex-direction: row;
-    }
+#myCarousel .nav a small {
+display: flex;
+flex-direction: row;
+}
 
-    #myCarousel .nav {
-      background: #eee;
-    }
+#myCarousel .nav {
+background: #eee;
+}
 
-    #myCarousel .nav a {
-      border-radius: 0px;
-    }
+#myCarousel .nav a {
+border-radius: 0px;
+}
 /*ici commence le style du footer*/
 
 .btn {
-    position: relative;
-    height: 20px;
-    box-sizing: border-box;
-    padding: 1px 8px 1px 6px;
-    background-color: #1b95e0;
-    color: #fff;
-    border-radius: 3px;
-    font-weight: 500;
-    cursor: pointer;
+position: relative;
+height: 20px;
+box-sizing: border-box;
+padding: 1px 8px 1px 6px;
+background-color: #1b95e0;
+color: #fff;
+border-radius: 3px;
+font-weight: 500;
+cursor: pointer;
 }
 
 #google{
-    position: relative;
-    height: 20px;
-    box-sizing: border-box;
-    padding: 1px 8px 1px 6px;
-    background-color: red;
-    color: black;
-    border-radius: 3px;
-    font-weight: 500;
-    cursor: pointer;
+position: relative;
+height: 20px;
+box-sizing: border-box;
+padding: 1px 8px 1px 6px;
+background-color: red;
+color: black;
+border-radius: 3px;
+font-weight: 500;
+cursor: pointer;
 
 }
 
 #moncercle{
-  background:orange;
-  border-radius:40%;
-  width:30px;
-  height:30px;
-  border:2px solid grey;
+background:orange;
+border-radius:40%;
+width:30px;
+height:30px;
+border:2px solid grey;
 }
-
