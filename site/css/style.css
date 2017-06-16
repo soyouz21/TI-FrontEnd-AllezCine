@@ -204,12 +204,3 @@ background: #333333;
   border:2px solid grey;
 }
 
-
-.decallage{
-    margin-top: 10px;
-}
-
-#pwd,#subject{
-    width:456px;
-    display: flex;
-}
