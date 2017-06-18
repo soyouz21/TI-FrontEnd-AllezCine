@@ -33,3 +33,9 @@
 
 1. Miriam   : Création de la section footer
 2. Michael  : Création de la partie shop
+
+
+##### 19 juin
+
+Début du vrai pair partening XD Vive les consignes pas clair du tout. 
+
