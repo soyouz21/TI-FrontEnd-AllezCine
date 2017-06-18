@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="site/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="site/jquery.bxslider.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <ul class="bxslider">
+    <li><img src="site/image/film/Alien.jpg" /></li>
+    <li><img src="site/image/film/avengers.jpg" /></li>
+    <li><img src="site/image/film/baywatch.jpg" /></li>
+    <li><img src="site/image/film/casablanca.jpg" /></li>
+    <li><img src="site/image/film/ironman3.jpg" /></li>
+    <li><img src="site/image/film/Alien.jpg" /></li>
+    <li><img src="site/image/film/avengers.jpg" /></li>
+    <li><img src="site/image/film/baywatch.jpg" /></li>
+    <li><img src="site/image/film/casablanca.jpg" /></li>
+    <li><img src="site/image/film/ironman3.jpg" /></li>
+  </ul>
+  <script>
+  	$(document).ready(function(){
+  		$('.bxslider').bxSlider({
+  			mode: 'horizontal',
+  			moveSlides: 1,
+  			slideMargin: 40,
+  			infiniteLoop: true,
+  			slideWidth: 660,
+  			minSlides: 6,
+  			maxSlides: 6,
+  			speed: 800,
+  		});
+  	});
+  </script>
+</body>
+</html>

@@ -1,3 +1,5 @@
+
+// menu déroulant
 $(function () {
     $(".dropdown").hover(
         function () {
@@ -12,11 +14,8 @@ $(function () {
         });
 });
 
-// code du carrousel de la section shop
-
-  // Jumbotron
-
-  $(document).ready( function() {
+// Jumbotron
+$(document).ready( function() {
     $('#myCarousel').carousel({
 		interval:   4000
 	});
@@ -41,7 +40,6 @@ $(function () {
 });
 
 //BOUTON "Plus de films",fonction pour faire apparaître la 3 row au click du bouton "plus de films"
-
 function buttonDisplay(classe, valeur) {
     var lesFilms = document.getElementsByClassName(classe);
     for (var i = 0; i < lesFilms.length; ++i) {
@@ -68,7 +66,6 @@ document.getElementById('HORREUR').onclick = function () {
     buttonDisplay('films', 'none');
     buttonDisplay('HORREUR', 'block');
 }
-
 document.getElementById('KIDS').onclick = function () {
   $(".3row").show("slow");
   $("#moinsdefilms").show();
@@ -89,19 +86,17 @@ document.getElementById('SUSPENSE').onclick = function () {
 $(".3row").hide()
 $("#moinsdefilms").hide()
 $("#plusdefilms").click(function () {
-
     $(".3row").show("slow");
     $("#moinsdefilms").show();
     $("#plusdefilms").hide();
-
 });
 
 $("#moinsdefilms").click(function(){
     $(".3row").hide("slow");
     $("#plusdefilms").show();
     $("#moinsdefilms").hide();
-
 })
+
 //ici code cookies
  /* window.addEventListener("load", function() {
             window.cookieconsent.initialise({
@@ -124,7 +119,6 @@ $("#moinsdefilms").click(function(){
             })
         });*/
 
-
 //ici fleche vers le haut
 var fleche=document.createElement("IMG");
 fleche.setAttribute("src","site/image/fleche.png");
@@ -141,4 +135,3 @@ $('html, body').animate({scrollTop:$(the_id).offset().top}, 'slow');//return fal
 $(fleche).click(function(){
   $('html, body').animate({scrollTop: '0px'}, 1000);
 });
-
