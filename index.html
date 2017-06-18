@@ -2,776 +2,803 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Miriam Azzouz, Michael Mesmaeker">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="site/image/AlleZiné-fav.png" />
-    <link rel="stylesheet" href="site/bootstrap/css/bootstrap.min.css">
-    <link href="site/fontawesome/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="site/css/style.css">
-    <title>AlleZiné</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Miriam Azzouz, Michael Mesmaeker">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="site/image/AlleZiné-fav.png" />
+  <link rel="stylesheet" href="site/bootstrap/css/bootstrap.min.css">
+  <link href="site/fontawesome/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="site/css/style.css">
+  <title>AlleZiné</title>
 </head>
 
 <body>
-    <!-- barre orange du dessus -->
-    <div class="orange"></div>
-    <!-- navlogo -->
-    <div class="container">
+  <!-- barre orange du dessus -->
+  <div class="orange"></div>
+  <!-- navlogo -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1 invisible"></div>
+      <div class="col-md-10">
         <div class="row">
-            <div class="col-md-1 invisible"></div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-3 text-left">
-                        <figure>
-                            <img src="site/image/AlleZiné.png" class="img-fluid" alt="fakelogo">
-                        </figure>
+          <div class="col-md-3 text-left">
+            <figure>
+              <img src="site/image/AlleZiné.png" class="img-fluid" alt="fakelogo">
+            </figure>
+          </div>
+          <div class="col-md-4 padding text-center">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control form-control-nav mr-sm-2" type="text" placeholder="Recherche">
+              <button class="newbtn btn btn-outline-success my-2 my-sm-0" type="submit">Go</button>
+            </form>
+          </div>
+          <div class="col-md-5 padding text-right">
+            <i class="fa fa-phone" aria-hidden="true"></i> (+0000) 123 345 653 <button class="btn-orange btn btn-outline-succes my-2 my-sm-0" data-toggle="modal" data-target="#myModallogin" type="button" name="button">Login</button>
+            <div class="modal fade" id="myModallogin" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content modal-content-login">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="text-center">
+                      <img class="logo" src="http://images.commeaucinema.com/popup/login_logo.png">
+                      <h2>AlleZiné</h2>
+                      <p>Accédez à votre compte</p>
+                      <img class="image-social" src="http://images.commeaucinema.com/popup/login_facebook.png">
+                      <img class="image-social" src="http://images.commeaucinema.com/popup/login_twitter.png">
                     </div>
-                    <div class="col-md-4 padding text-center">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </div>
-                    <div class="col-md-5 padding text-right">
-                        <i class="fa fa-phone" aria-hidden="true"></i> (+0000) 123 345 653 <button class="btn btn-outline-succes my-2 my-sm-0" type="button" name="button">Login</button>
-                    </div>
+                  </div>
+                  <div class="modal-body modal-body-login text-center">
+                    <form id="myform" class="cssform" action="">
+
+                      <p class="form-connection"><input type="text" id="user" placeholder="Votre mail" /></p>
+
+                      <p class="form-connection"><input type="text" id="emailaddress" placeholder="Mot de passe" /><a class="forget">Mot de passe oublié ?</a></p>
+
+                      <p class="text-left left"><input type="checkbox" id="terms" class="boxes" /><label for="terms">Rester connecté</label></p>
+
+                      <p>
+                        <div class="text-left floatleft">
+                          <button type="button" class="btn-orange-login btn btn-outline-succes my-2 my-sm-0" name="button">Créer un compte</button>
+                        </div>
+                        <div class="text-right right">
+                          <button type="button" class="btn-orange-login btn btn-outline-succes my-2 my-sm-0" name="button">Cancel</button>
+                        </div>
+                      </p>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-orange-login btn btn-outline-succes my-2 my-sm-0" data-dismiss="modal">Close</button>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- navbar -->
-    <div class="container oranges">
-        <div class="row">
-            <div class="col-md-1 invisible"></div>
-            <div class="col-md-8">
-                <div class="container">
-                    <div class="row">
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <li><a href="#">Home</a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Films<b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Policier</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Aventures</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Series<b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Policier</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Aventures</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Shop</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+  </div>
+  <!-- navbar -->
+  <div class="container oranges">
+    <div class="row">
+      <div class="col-md-1 invisible"></div>
+      <div class="col-md-8">
+        <div class="container">
+          <div class="row">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Films<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Policier</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Aventures</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Series<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Policier</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Aventures</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- Jumbotron -->
-    <div class="container">
-        <div class="row withoutbordered">
-            <div class="col-md-10 paddd jumbo">
-                <div class="container">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  </div>
+  <!-- Jumbotron -->
+  <div class="container">
+    <div class="row withoutbordered">
+      <div class="col-md-10 paddd jumbo">
+        <div class="container">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
 
-                            <div class="item active img-responsive">
-                                <img src="site/image/jumbotron/deadpool-jumbotron.jpg">
-                            </div>
-                            <!-- End Item -->
+              <div class="item active img-responsive">
+                <img src="site/image/jumbotron/deadpool-jumbotron.jpg">
+              </div>
+              <!-- End Item -->
 
-                            <div class="item img-responsive">
-                                <img src="site/image/jumbotron/5eme-vague-jumbotron.jpg">
-                            </div>
-                            <!-- End Item -->
+              <div class="item img-responsive">
+                <img src="site/image/jumbotron/5eme-vague-jumbotron.jpg">
+              </div>
+              <!-- End Item -->
 
-                            <div class="item img-responsive">
-                                <img src="site/image/jumbotron/galaxy-jumbotron.jpg">
-                            </div>
-                            <!-- End Item -->
+              <div class="item img-responsive">
+                <img src="site/image/jumbotron/galaxy-jumbotron.jpg">
+              </div>
+              <!-- End Item -->
 
-                            <div class="item img-responsive">
-                                <img src="site/image/jumbotron/logan-jumbotron.jpg">
-                            </div>
-                            <!-- End Item -->
-                            <div class="item img-responsive">
-                                <img src="site/image/jumbotron/sparrow-jumbotron.jpg">
-                            </div>
-                            <!-- End Item -->
-                        </div>
-                        <!-- End Carousel Inner -->
-                    </div>
-                    <!-- End Carousel -->
-                </div>
+              <div class="item img-responsive">
+                <img src="site/image/jumbotron/logan-jumbotron.jpg">
+              </div>
+              <!-- End Item -->
+              <div class="item img-responsive">
+                <img src="site/image/jumbotron/sparrow-jumbotron.jpg">
+              </div>
+              <!-- End Item -->
             </div>
-            <div class="col-md-2 paddd jumbo">
-                <ul class="nav mini-jumbo">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active">
-                        <a href="#"><img class="img-responsive" src="site/image/jumbotron/deadpool-jumbotron.jpg" alt=""></a>
-                    </li>
-                    <li data-target="#myCarousel" data-slide-to="1">
-                        <a href="#"><img class="img-responsive" src="site/image/jumbotron/5eme-vague-jumbotron.jpg" alt=""></a>
-                    </li>
-                    <li data-target="#myCarousel" data-slide-to="2">
-                        <a href="#"><img class="img-responsive" src="site/image/jumbotron/galaxy-jumbotron.jpg" alt=""></a>
-                    </li>
-                    <li data-target="#myCarousel" data-slide-to="3">
-                        <a href="#"><img class="img-responsive" src="site/image/jumbotron/logan-jumbotron.jpg" alt=""></a>
-                    </li>
-                    <li data-target="#myCarousel" data-slide-to="4">
-                        <a href="#"><img class="img-responsive" src="site/image/jumbotron/sparrow-jumbotron.jpg" alt=""></a>
-                    </li>
-                </ul>
-            </div>
+            <!-- End Carousel Inner -->
+          </div>
+          <!-- End Carousel -->
         </div>
+      </div>
+      <div class="col-md-2 paddd jumbo">
+        <ul class="nav mini-jumbo">
+          <li data-target="#myCarousel" data-slide-to="0" class="active">
+            <a href="#"><img class="img-responsive" src="site/image/jumbotron/deadpool-jumbotron.jpg" alt=""></a>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="1">
+            <a href="#"><img class="img-responsive" src="site/image/jumbotron/5eme-vague-jumbotron.jpg" alt=""></a>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="2">
+            <a href="#"><img class="img-responsive" src="site/image/jumbotron/galaxy-jumbotron.jpg" alt=""></a>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="3">
+            <a href="#"><img class="img-responsive" src="site/image/jumbotron/logan-jumbotron.jpg" alt=""></a>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="4">
+            <a href="#"><img class="img-responsive" src="site/image/jumbotron/sparrow-jumbotron.jpg" alt=""></a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- Section modal bootstrap de miriam -->
-    <div class="container">
-        <div class="row rangee1">
-            <div class="col-md-1 invisible" class=img-responsive></div>
-            <div class="col-md-10">
-                <div class="container bordered space-between">
-                    <!-- space-between means : display:flex and justify-content: space-between. Cela permet que les items ici les div contenant les img prennent tous l'espace disponible en créant alors des faux padding :) -->
-                    <div class="text-center" class="img-responsive">
-                        <a class="thumbnail"><img src="site/image/film/12YearsSlave.jpg"></a>
-                        <!-- Trigger the modal with a button -->
-                        <div class="container">
-                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal12">12 Years a Slave</button>
-                            <div>
-                                <p class="text1">2010</p>
-                                <p class="text2">Romance</p>
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModal12" role="dialog">
-                                <div class="modal-dialog">
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h1 class="modal-title">12 Years a Slave</h1>
-                                            <img src="site/image/film/12YearsSlave.jpg">
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>Lorsque Solomon retourne à la plantation d'Epps, il tente d'utiliser le peu d'argent qu'il a pu récupérer ici et là pour convaincre un ancien contremaître blanc devenu ouvrier agricole d'envoyer une lettre à ses amis de New York. ... Elle demande finalement de l'aide à Northup pour se suicider, ce que Solomon refuse.</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+  </div>
+  <!-- Section modal bootstrap de miriam -->
+  <div class="container">
+    <div class="row rangee1">
+      <div class="col-md-1 invisible" class=img-responsive></div>
+      <div class="col-md-10">
+        <div class="container bordered space-between">
+          <!-- space-between means : display:flex and justify-content: space-between. Cela permet que les items ici les div contenant les img prennent tous l'espace disponible en créant alors des faux padding :) -->
+          <div class="text-center" class="img-responsive">
+            <img type="button" class="" data-toggle="modal" data-target="#myModal12" src="site/image/film/12YearsSlave.jpg">
+            <!-- Trigger the modal with a button -->
+            <div class="container">
+              <h3>12 Years a Slave</h3>
+              <div>
+                <p class="text1">2010</p>
+                <p class="text2">Romance</p>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal12" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h1 class="modal-title">12 Years a Slave</h1>
+                      <img src="site/image/film/12YearsSlave.jpg">
                     </div>
-
-                    <div class="text-center" class="img-responsive">
-                        <a class="thumbnail"><img src="site/image/film/47metersDown.jpg"></a>
-                        <div class="container">
-                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal47">47 meters Down</button>
-                            <div>
-                                <p class="text1">2017</p>
-                                <p class="text2">Horror</p>
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModal47" role="dialog">
-                                <div class="modal-dialog">
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h1 class="modal-title">47 meters Down</h1>
-                                            <img src="site/image/film/47metersDown.jpg">
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>Two sisters vacationing in Mexico are trapped in a shark cage at the bottom of the ocean. With less than an hour of oxygen left and great white sharks circling nearby, they must fight to survive.</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="modal-body">
+                      <p>Lorsque Solomon retourne à la plantation d'Epps, il tente d'utiliser le peu d'argent qu'il a pu récupérer ici et là pour convaincre un ancien contremaître blanc devenu ouvrier agricole d'envoyer une lettre à ses amis de New York.
+                        ... Elle demande finalement de l'aide à Northup pour se suicider, ce que Solomon refuse.</p>
                     </div>
-
-                    <div class="text-center" class="img-responsive">
-                        <a class="thumbnail"><img src="site/image/film/avengers2.jpg"></a>
-                        <div class="container">
-                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalAvengers">Avengers</button>
-                            <div>
-                                <p class="text1">2013</p>
-                                <p class="text2">Science-Fiction</p>
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModalAvengers" role="dialog">
-                                <div class="modal-dialog">
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h1 class="modal-title">Avengers</h1>
-                                            <img src="site/image/film/avengers2.jpg">
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>Nick Fury prend la décision de réactiver le projet Initiative des Avengers afin de récupérer le Tesseract et mettre fin aux plans de Loki. ... Iron Man défie Thor pour l'empêcher de partir avec Loki avant d'avoir retrouvé le Tesseract et Captain America arrive à son tour.</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-center" class="img-responsive">
-                        <a class="thumbnail"><img src="site/image/film/baywatch.jpg"></a>
-                        <div class="container">
-                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalBaywatch">Baywatch</button>
-                            <div>
-                                <p class="text1">2017</p>
-                                <p class="text2">Comédie</p>
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModalBaywatch" role="dialog">
-                                <div class="modal-dialog">
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h1 class="modal-title">Baywatch</h1>
-                                            <img src="site/image/film/baywatch.jpg">
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>Le légendaire sauveteur Mitch Buchannon est contraint de s'associer à une nouvelle recrue, Matt Brody, aussi ambitieux que tête brûlée ! Ensemble, ils vont tenter de déjouer un complot criminel qui menace l'avenir de la Baie...</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-center" class=img-responsive>
-                        <a class="thumbnail"><img src="site/image/film/casablanca.jpg"></a>
-                        <div class="container">
-                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalcasa">Casablanca</button>
-                            <div>
-                                <p class="text1">1952</p>
-                                <p class="text2">Romance</p>
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModalcasa" role="dialog">
-                                <div class="modal-dialog">
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h1 class="modal-title">12 Years a Slave</h1>
-                                            <img src="site/image/film/casablanca.jpg">
-                                            <div class="container">
-                                            </div>
-                                            <div class="modal-body">
-                                                <p>In the early years of World War II, December 1941, the Moroccan coastal city of Casablanca attracts people from all over the world, particularly Nazi-occupied Europe. Many are transients trying to get out of Europe; a few are just trying to make a buck.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--A utiliser pour tous les titres -->
-        <div class="container paddd">
-            <div class="col-md-2 paddd">
-                <div class="col-md-3 invisible paddd"></div>
-                <div class="col-md-9 text-left paddd">
-                    <div class="bloc-orange-titre">
-                        <h4 class="titre1 paddd">Features Movies</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-1 invisible"></div>
-
-                <div class="col-md-10">
-                    <div class="bouton">
-                        <button id="ALL">ALL</button>
-                        <button id="ACTIONS">ACTIONS</button>
-                        <button id="HORREUR">HORREUR</button>
-                        <button id="KIDS">KIDS</button>
-                        <button id="SUSPENSE">SUSPENSE</button>
-                    </div>
-                    <div class="container img-row">
-                        <div class="row">
-
-                            <div class="col-md-2 text-center  films ACTIONS"><img src="site/image/film/JurassicWorld.jpg">
-                                <p class="titre">Jurassic World</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center  films SUSPENSE"><img src="site/image/film/repulsion.jpg">
-                                <p class="titre">Repulsion</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center films KIDS"><img src="site/image/film/nemo.jpg">
-                                <p class="titre">Nemo</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center  films HORREUR"><img src="site/image/film/theMummy.jpg">
-                                <p class="titre">The Mummy</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center films KIDS"><img src="site/image/film/theWiazrdOfOZ.jpg">
-                                <p class="titre">The Wizard of OZ</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center films ACTIONS"><img src="site/image/film/Selma.jpg">
-                                <p class="titre">Selma</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center  films ACTIONS"><img src="site/image/film/JurassicWorld.jpg">
-                                <p class="titre">Jurassic World</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center  films SUSPENSE"><img src="site/image/film/repulsion.jpg">
-                                <p class="titre">Repulsion</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center films KIDS"><img src="site/image/film/nemo.jpg">
-                                <p class="titre">Nemo</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center  films HORREUR"><img src="site/image/film/theMummy.jpg">
-                                <p class="titre">The Mummy</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center films KIDS"><img src="site/image/film/theWiazrdOfOZ.jpg">
-                                <p class="titre">The Wizard of OZ</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center films ACTIONS"><img src="site/image/film/Selma.jpg">
-                                <p class="titre">Selma</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center 3row films ACTIONS"><img src="site/image/film/JurassicWorld.jpg">
-                                <p class="titre">Jurassic World</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center 3row films SUSPENSE"><img src="site/image/film/repulsion.jpg">
-                                <p class="titre">Repulsion</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center 3row films KIDS"><img src="site/image/film/nemo.jpg">
-                                <p class="titre">Nemo</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center 3row films HORREUR"><img src="site/image/film/theMummy.jpg">
-                                <p class="titre">The Mummy</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center 3row films KIDS"><img src="site/image/film/theWiazrdOfOZ.jpg">
-                                <p class="titre">The Wizard of OZ</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center 3row films ACTIONS"><img src="site/image/film/Selma.jpg">
-                                <p class="titre">Selma</p>
-                                <p>2010</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="petitbouton text-center"><button id="plusdefilms">Plus de films</button></div>
-            <div class="petitbouton text-center"><button id="moinsdefilms">Moins de films</button></div>
-        </div>
-        <!--Section series-->
-        <div class="container paddd">
-            <div class="col-md-2 paddd">
-                <div class="col-md-3 invisible paddd"></div>
-                <div class="col-md-9 text-left paddd">
-                    <div class="bloc-orange-titre">
-                        <h4 class="titre1 paddd">Series</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-1 invisible"></div>
-
-                <div class="col-md-10">
-                    <div class="bouton">
-                        <button id="ALL">ALL</button>
-                        <button id="ACTIONS">ACTIONS</button>
-                        <button id="HORREUR">HORREUR</button>
-                        <button id="KIDS">KIDS</button>
-                        <button id="SUSPENSE">SUSPENSE</button>
-                    </div>
-                    <div class="container img-row">
-                        <div class="row">
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/13reasonwhy.png">
-                                <p class="titre">13 Reason why</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/americangods.jpg">
-                                <p class="titre">American Gods</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/armefatal.jpg">
-                                <p class="titre">Arme Fatal</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/colony.jpg">
-                                <p class="titre">Colony</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/fearthewalkingdead.jpg">
-                                <p class="titre">Fear The walking Dead</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/gameofthrones.jpg">
-                                <p class="titre">Games of Thrones</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/grey'sanatomy.jpg">
-                                <p class="titre">Grey's Anatomy</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/les100.jpg">
-                                <p class="titre">The 100</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/lucifer.jpg">
-                                <p class="titre">Lucifer</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/orangeisthenewblack.png">
-                                <p class="titre">Orange is the New Black</p>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/prisonbreak.jpg">
-                                <p class="titre">Prison Brek</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/sense8.png">
-                                <p class="titre">Sense 8</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/strangerthings.png">
-                                <p class="titre">Stranger Things</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/thefive.jpg">
-                                <p class="titre">The Five</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/theleftlovers.jpg">
-                                <p class="titre">The Left Lovers</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/thewalkingdead.jpg">
-                                <p class="titre">The Walking Dead</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/vampirediaries.jpg">
-                                <p class="titre">Vampire Diaries</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                            <div class="col-md-2 text-center"><img src="site/image/serie/viking.jpg">
-                                <p class="titre">Vikings</p>
-                                <br>
-                                <p>2010</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="petitbouton text-center"><button id="plusdefilms">Plus de films</button></div>
-            <div class="petitbouton text-center display-none"><button id="moinsdefilms">Moins de films</button></div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1 invisible"></div>
-                <div class="col-md-10 paddd">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 paddd">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/FIOWVOOVOe8" frameborder="0" autoplay=1></iframe>
-                                </div>
-                            </div>
-                            <div class="col-md-6 orange-bck paddd">
-                                <h1 class="text-center">Les Gardiens de la Galaxy 2</h1>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <p class="text-right">
-                                                <bold>Résumé :</bold>
-                                            </p>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <p>Les Gardiens de la galaxie 2 poursuit les aventures de l'équipe alors qu'elle traverse les confins du cosmos. Les gardiens doivent combattre pour rester unis alors qu'ils découvrent les mystères de la filiation de Peter Quill. </p>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <p class="text-right">
-                                                    <bold>Date de sortie:</bold>
-                                                </p>
-                                            </div>
-                                            <div class="col-md-8">
-                                                <p>2017</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <p class="text-right">
-                                                    <bold>Genres:</bold>
-                                                </p>
-                                            </div>
-                                            <div class="col-md-8">
-                                                <p>Science-fiction Comédie</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1 invisible"></div>
-                <div class="col-md-10">
-                    <div class="container">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--ici commence le footer -->
-    <div class="container padding">
-        <div class="row">
-            <div class="col-md-1 invisible"></div>
-            <div class="col-md-10 paddd">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-3 black-back div">Adresse
-                        <div id="moncercle"></div>
-                    </div>
-                    <div class="col-md-3 black-back">
-                        <p>Call</p><br/>
-                        <p>9887776665444</p><br/>
-                        <p>333444555555</p><br/>
-                        <p>344455587979</p><br/></div>
-                    <div class="col-md-3 black-back">
-                        <p>Email</p><br/>
-                        <p>email@gmail.com</p><br/>
-                        <p>email@gmail.com</p><br/>
-                        <p>email@gmail.com</p><br/></div>
-                    <div class="col-md-3 black-back">
-                        <p>Social Media</p><br/>
-                        <a id="twitter" class="btn" title="Twitter" href="https://twitter.com/?lang=fr">
-                            <span class="label" id="l">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <b>Twitter</b>
-                            </span>
-                        </a><br/>
-                        <a id="facebook" class="btn" title="Twitter" href="https://www.facebook.com">
-                            <span class="label" id="l">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <b>Facebook</b>
-                            </span>
-                        </a><br/>
-                        <a id="google" class="btn red" title="Google" href="https://plus.google.com/collections/featured?hl=fr">
-                            <span class="label" id="l">
-                            <i class="fa fa-google-plus" aria-hidden="true"></i>
-                            <b>Google</b>
-                            </span>
-                        </a><br/>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="container">
-          <!--<div class="col-md-3">Adresse
-              <div id="moncercle"></div>
           </div>
-          <div class="col-md-3">
-              <p>Call</p><br/>
-              <p>9887776665444</p><br/>
-              <p>333444555555</p><br/>
-              <p>344455587979</p><br/></div>
-          <div class="col-md-3">
-              <p>Email</p><br/>
-              <p>email@gmail.com</p><br/>
-              <p>email@gmail.com</p><br/>
-              <p>email@gmail.com</p><br/></div>
-          <div class="col-md-3">
-              <p>Social Media</p><br/>
+
+          <div class="text-center" class="img-responsive">
+            <img data-toggle="modal" data-target="#myModal47" src="site/image/film/47metersDown.jpg">
+            <div class="container">
+              <h3>47 meters Down</h3>
+              <div>
+                <p class="text1">2017</p>
+                <p class="text2">Horror</p>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal47" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h1 class="modal-title">47 meters Down</h1>
+                      <img src="site/image/film/47metersDown.jpg">
+                    </div>
+                    <div class="modal-body">
+                      <p>Two sisters vacationing in Mexico are trapped in a shark cage at the bottom of the ocean. With less than an hour of oxygen left and great white sharks circling nearby, they must fight to survive.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center" class="img-responsive">
+            <img data-toggle="modal" data-target="#myModalAvengers" src="site/image/film/avengers2.jpg">
+            <div class="container">
+              <h3>Avengers</h3>
+              <div>
+                <p class="text1">2013</p>
+                <p class="text2">Science-Fiction</p>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="myModalAvengers" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h1 class="modal-title">Avengers</h1>
+                      <img src="site/image/film/avengers2.jpg">
+                    </div>
+                    <div class="modal-body">
+                      <p>Nick Fury prend la décision de réactiver le projet Initiative des Avengers afin de récupérer le Tesseract et mettre fin aux plans de Loki. ... Iron Man défie Thor pour l'empêcher de partir avec Loki avant d'avoir retrouvé le Tesseract
+                        et Captain America arrive à son tour.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center" class="img-responsive">
+            <img data-toggle="modal" data-target="#myModalBaywatch" src="site/image/film/baywatch.jpg">
+            <div class="container">
+              <h3>Baywatch</h3>
+              <div>
+                <p class="text1">2017</p>
+                <p class="text2">Comédie</p>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="myModalBaywatch" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h1 class="modal-title">Baywatch</h1>
+                      <img src="site/image/film/baywatch.jpg">
+                    </div>
+                    <div class="modal-body">
+                      <p>Le légendaire sauveteur Mitch Buchannon est contraint de s'associer à une nouvelle recrue, Matt Brody, aussi ambitieux que tête brûlée ! Ensemble, ils vont tenter de déjouer un complot criminel qui menace l'avenir de la Baie...</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center" class=img-responsive>
+            <img data-toggle="modal" data-target="#myModalcasa" src="site/image/film/casablanca.jpg">
+            <div class="container">
+              <h3>Casablanca</h3>
+              <div>
+                <p class="text1">1952</p>
+                <p class="text2">Romance</p>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="myModalcasa" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h1 class="modal-title">12 Years a Slave</h1>
+                      <img src="site/image/film/casablanca.jpg">
+                      <div class="container">
+                      </div>
+                      <div class="modal-body">
+                        <p>In the early years of World War II, December 1941, the Moroccan coastal city of Casablanca attracts people from all over the world, particularly Nazi-occupied Europe. Many are transients trying to get out of Europe; a few are just
+                          trying to make a buck.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--A utiliser pour tous les titres -->
+    <div class="container paddd">
+      <div class="col-md-2 paddd">
+        <div class="col-md-3 invisible paddd"></div>
+        <div class="col-md-9 text-left paddd">
+          <div class="bloc-orange-titre">
+            <h4 class="titre1 paddd">Features Movies</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-1 invisible"></div>
+
+        <div class="col-md-10">
+          <div class="bouton">
+            <button class="btn-orange-featured btn btn-outline-succes my-2 my-sm-0" id="ALL">ALL</button>
+            <button class="btn-orange-featured btn btn-outline-succes my-2 my-sm-0" id="ACTIONS">ACTIONS</button>
+            <button class="btn-orange-featured btn btn-outline-succes my-2 my-sm-0" id="HORREUR">HORREUR</button>
+            <button class="btn-orange-featured btn btn-outline-succes my-2 my-sm-0" id="KIDS">KIDS</button>
+            <button class="btn-orange-featured btn btn-outline-succes my-2 my-sm-0" id="SUSPENSE">SUSPENSE</button>
+          </div>
+          <div class="container img-row">
+            <div class="row">
+
+              <div class="col-md-2 text-center  films ACTIONS"><img src="site/image/film/JurassicWorld.jpg">
+                <p class="titre">Jurassic World</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center  films SUSPENSE"><img src="site/image/film/repulsion.jpg">
+                <p class="titre">Repulsion</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center films KIDS"><img src="site/image/film/nemo.jpg">
+                <p class="titre">Nemo</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center  films HORREUR"><img src="site/image/film/theMummy.jpg">
+                <p class="titre">The Mummy</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center films KIDS"><img src="site/image/film/theWiazrdOfOZ.jpg">
+                <p class="titre">The Wizard of OZ</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center films ACTIONS"><img src="site/image/film/Selma.jpg">
+                <p class="titre">Selma</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center  films ACTIONS"><img src="site/image/film/JurassicWorld.jpg">
+                <p class="titre">Jurassic World</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center  films SUSPENSE"><img src="site/image/film/repulsion.jpg">
+                <p class="titre">Repulsion</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center films KIDS"><img src="site/image/film/nemo.jpg">
+                <p class="titre">Nemo</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center  films HORREUR"><img src="site/image/film/theMummy.jpg">
+                <p class="titre">The Mummy</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center films KIDS"><img src="site/image/film/theWiazrdOfOZ.jpg">
+                <p class="titre">The Wizard of OZ</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center films ACTIONS"><img src="site/image/film/Selma.jpg">
+                <p class="titre">Selma</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center 3row films ACTIONS"><img src="site/image/film/JurassicWorld.jpg">
+                <p class="titre">Jurassic World</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center 3row films SUSPENSE"><img src="site/image/film/repulsion.jpg">
+                <p class="titre">Repulsion</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center 3row films KIDS"><img src="site/image/film/nemo.jpg">
+                <p class="titre">Nemo</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center 3row films HORREUR"><img src="site/image/film/theMummy.jpg">
+                <p class="titre">The Mummy</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center 3row films KIDS"><img src="site/image/film/theWiazrdOfOZ.jpg">
+                <p class="titre">The Wizard of OZ</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center 3row films ACTIONS"><img src="site/image/film/Selma.jpg">
+                <p class="titre">Selma</p>
+                <p>2010</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="petitbouton text-center"><button class="btn-orange btn btn-outline-succes my-2 my-sm-0" id="plusdefilms">Plus de films</button></div>
+      <div class="petitbouton text-center"><button class="btn-orange btn btn-outline-succes my-2 my-sm-0" id="moinsdefilms">Moins de films</button></div>
+    </div>
+    <!--Section series-->
+    <div class="container paddd">
+      <div class="col-md-2 paddd">
+        <div class="col-md-3 invisible paddd"></div>
+        <div class="col-md-9 text-left paddd">
+          <div class="bloc-orange-titre">
+            <h4 class="titre1 paddd">Series</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-1 invisible"></div>
+
+        <div class="col-md-10">
+          <div class="bouton">
+            <button class="btn-orange-featured btn btn-outline-succes my-2 my-sm-0" id="ALL">ALL</button>
+            <button class="btn-orange-featured btn btn-outline-succes my-2 my-sm-0" id="ACTIONS">ACTIONS</button>
+            <button class="btn-orange-featured btn btn-outline-succes my-2 my-sm-0" id="HORREUR">HORREUR</button>
+            <button class="btn-orange-featured btn btn-outline-succes my-2 my-sm-0" id="KIDS">KIDS</button>
+            <button class="btn-orange-featured btn btn-outline-succes my-2 my-sm-0" id="SUSPENSE">SUSPENSE</button>
+          </div>
+          <div class="container img-row">
+            <div class="row">
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/13reasonwhy.png">
+                <p class="titre">13 Reason why</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/americangods.jpg">
+                <p class="titre">American Gods</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/armefatal.jpg">
+                <p class="titre">Arme Fatal</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/colony.jpg">
+                <p class="titre">Colony</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/fearthewalkingdead.jpg">
+                <p class="titre">Fear The walking Dead</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/gameofthrones.jpg">
+                <p class="titre">Games of Thrones</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/grey'sanatomy.jpg">
+                <p class="titre">Grey's Anatomy</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/les100.jpg">
+                <p class="titre">The 100</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/lucifer.jpg">
+                <p class="titre">Lucifer</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/orangeisthenewblack.png">
+                <p class="titre">Orange is the New Black</p>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/prisonbreak.jpg">
+                <p class="titre">Prison Brek</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/sense8.png">
+                <p class="titre">Sense 8</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/strangerthings.png">
+                <p class="titre">Stranger Things</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/thefive.jpg">
+                <p class="titre">The Five</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/theleftlovers.jpg">
+                <p class="titre">The Left Lovers</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/thewalkingdead.jpg">
+                <p class="titre">The Walking Dead</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/vampirediaries.jpg">
+                <p class="titre">Vampire Diaries</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+              <div class="col-md-2 text-center"><img src="site/image/serie/viking.jpg">
+                <p class="titre">Vikings</p>
+                <br>
+                <p>2010</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="petitbouton text-center"><button class="btn-orange btn btn-outline-succes my-2 my-sm-0" id="plusdefilms">Plus de films</button></div>
+      <div class="petitbouton text-center display-none"><button class="btn-orange btn btn-outline-succes my-2 my-sm-0" id="moinsdefilms">Moins de films</button></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1 invisible"></div>
+        <div class="col-md-10 paddd">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 paddd">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/FIOWVOOVOe8" frameborder="0" autoplay=1></iframe>
+                </div>
+              </div>
+              <div class="col-md-6 orange-bck paddd">
+                <h1 class="text-center">Les Gardiens de la Galaxy 2</h1>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <p class="text-right">
+                        <bold>Résumé :</bold>
+                      </p>
+                    </div>
+                    <div class="col-md-8">
+                      <p>Les Gardiens de la galaxie 2 poursuit les aventures de l'équipe alors qu'elle traverse les confins du cosmos. Les gardiens doivent combattre pour rester unis alors qu'ils découvrent les mystères de la filiation de Peter Quill. </p>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <p class="text-right">
+                          <bold>Date de sortie:</bold>
+                        </p>
+                      </div>
+                      <div class="col-md-8">
+                        <p>2017</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <p class="text-right">
+                          <bold>Genres:</bold>
+                        </p>
+                      </div>
+                      <div class="col-md-8">
+                        <p>Science-fiction Comédie</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1 invisible"></div>
+        <div class="col-md-10">
+          <ul class="bxslider">
+            <li><img src="site/image/film/Alien.jpg" /></li>
+            <li><img src="site/image/film/avengers.jpg" /></li>
+            <li><img src="site/image/film/baywatch.jpg" /></li>
+            <li><img src="site/image/film/casablanca.jpg" /></li>
+            <li><img src="site/image/film/ironman3.jpg" /></li>
+            <li><img src="site/image/film/Alien.jpg" /></li>
+            <li><img src="site/image/film/avengers.jpg" /></li>
+            <li><img src="site/image/film/baywatch.jpg" /></li>
+            <li><img src="site/image/film/casablanca.jpg" /></li>
+            <li><img src="site/image/film/ironman3.jpg" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--ici commence le footer -->
+  <div class="container padding">
+    <div class="row">
+      <div class="col-md-1 invisible"></div>
+      <div class="col-md-10 paddd">
+        <div class="container">
+          <div class="row space-between">
+            <div class="container black-back div-4-left">
+              Adresse
+              <div id="moncercle"><i class="fa fa-map-marker" aria-hidden="true"></i>
+</div>
+            </div>
+            <div class="container black-back div-4">
+              <div id="moncercle"><i class="fa fa-phone" aria-hidden="true"></i>
+</div>
+              <p>Call</p>
+              >
+              <p>333444555555</p>
+              <p>344455587979</p>
+            </div>
+            <div class="container black-back div-4">
+              <div id="moncercle"><i class="fa fa-envelope" aria-hidden="true"></i>
+</div>
+              <p>Email</p>
+              <p>email@gmail.com</p>
+              <p>email@gmail.com</p>
+              <p>email@gmail.com</p>
+            </div>
+            <div class="container black-back div-4-right">
+              <div id="moncercle"><i class="fa fa-user" aria-hidden="true"></i>
+</div>
+              <p>Social Media</p>
               <a id="twitter" class="btn" title="Twitter" href="https://twitter.com/?lang=fr">
                   <span class="label" id="l">
                   <i class="fa fa-twitter" aria-hidden="true"></i>
                   <b>Twitter</b>
                   </span>
-              </a><br/>
+              </a>
               <a id="facebook" class="btn" title="Twitter" href="https://www.facebook.com">
                   <span class="label" id="l">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
                   <b>Facebook</b>
                   </span>
-              </a><br/>
+              </a>
               <a id="google" class="btn red" title="Google" href="https://plus.google.com/collections/featured?hl=fr">
                   <span class="label" id="l">
                   <i class="fa fa-google-plus" aria-hidden="true"></i>
                   <b>Google</b>
                   </span>
-              </a><br/>
-          </div>-->
-                        <div class="row decallage">
-                            <div class="col-md-1 invisible"></div>
-                            <div class="col-md-10">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <form class="form-horizontal" action="/action_page.php">
-                                            <div class="form-group">
-
-
-                                                <input type="First Name" class="form-control" id="firstname" placeholder="First Name" name="First Name"></div>
-
-                                            <div class="form-group">
-
-                                                <input type="email" class="form-control" id="pwd" placeholder="Email" name="email">
-                                            </div>
-
-                                        </form>
-                                    </div>
-                                    <div class="col-md-6">
-
-                                        <form class="form-horizontal" action="/action_page.php">
-                                            <div class="form-group">
-                                                <input type="last name" class="form-control" id="last name" placeholder="Last Name" name="last name"></div>
-                                                <div class="form-group">
-
-                                                    <input type="subject" class="form-control" id="subject" placeholder="Subject" name="subject">
-                                                </div>
-
-                                        </form>
-
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-
-                                        <form class="form-horizontal" action="/action_page.php">
-                                            <div class="form-group">
-
-                                                <textarea class="form-control" rows="5" id="comment"></textarea>
-
-                                                <div class="form-group">
-
-                                                    <button type="submit" class="btn btn-default lastbutton">Envoi</button>
-
-                                                </div>
-                                            </div>
-                                        </form>
-
-
-                                    </div>
-                                </div></div></div></div></div>
-
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="site/javascript/js.js"></script>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row decallage">
+        <div class="col-md-1 invisible"></div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-6">
+              <form class="form-horizontal" action="/action_page.php">
+                <div class="form-group">
+                  <input type="First Name" class="form-control" id="firstname" placeholder="First Name" name="First Name"></div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="pwd" placeholder="Email" name="email">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <form class="form-horizontal" action="/action_page.php">
+                <div class="form-group">
+                  <input type="last name" class="form-control" id="last name" placeholder="Last Name" name="last name"></div>
+                <div class="form-group">
+                  <input type="subject" class="form-control" id="subject" placeholder="Subject" name="subject">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-default lastbutton">Envoi</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="site/javascript/js.js"></script>
+  <script type="text/javascript" src="site/jquery.bxslider.js">
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        mode: 'horizontal',
+        moveSlides: 1,
+        slideMargin: 40,
+        infiniteLoop: true,
+        slideWidth: 660,
+        minSlides: 6,
+        maxSlides: 6,
+        speed: 800,
+      });
+    });
+  </script>
 </body>
 
 </html>
