@@ -10,6 +10,52 @@
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
   width: 100%;
 }
+/*ici style pour mes boutons reseaus sociaux*/
+.reseaux{
+   
+    width: 100px;
+    height: 30%;
+    position: fixed;
+    top:30%;
+}
+.btnRond{
+    width: 20px;
+    height: 20px;
+    background: blue;
+    border-radius: 50%;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+        
+}
+.btnRond i{
+    color: white;
+    width: 5px;
+    text-align: center;
+    margin-left: 3px;
+}
+.btnReseau{
+    background: black;
+    width: 100px;
+    height: 30px;
+    border-radius: 0px 50px 50px 0px;
+    margin-bottom: 2px; 
+    position: relative;
+    left: -70px;    
+}
+.btnReseau:hover{
+    background: blue;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+@keyframes slidein{
+    from{
+        left: -70px;
+    }
+    to{
+        left:0px;
+    }
+}
 
 .newbtn {
   background-color: black;
@@ -92,7 +138,7 @@
   margin-right: 20%;
 }
 
-.form-inline .form-control {
+.first {
   width: 75%;
 }
 .fill {
@@ -125,7 +171,6 @@
   border-radius: 0px 0px 0px 0px;
   background-color: orange;
   width: 15%;
-  margin-left: 10px;
   color: white;
 }
 .btn-orange-featured {
@@ -401,4 +446,53 @@ ul li img {
 
 #moncercle i {
   max-width: 50%
+}
+
+.taille{
+    width: 75%;
+
+}
+.tailleb {
+    width: 24%;
+}
+
+@media (min-width: 768px){
+    .form-inline .form-control{
+        width: 75%;
+}
+    }
+
+    .img-footer{
+    width: 50px;
+    height: auto;
+    float: right;
+    margin-top: 55px;
+}
+.texte-footer1{
+    float: left;
+}
+
+.texte-footer{
+    float: right;
+}
+.texte-footer p{
+    float: left;
+    margin-left: 20px;
+}
+.borderw{
+    border: 1px solid white;
+    width: 100%;
+    padding: 6px;
+}
+h3{
+    color: orange;
+}
+.fleche{
+
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+
 }

@@ -125,7 +125,7 @@ fleche.setAttribute("src","site/image/fleche.png");
 fleche.setAttribute("width","40px");
 fleche.setAttribute("height","40px");
 
-$(".lastbutton").after(fleche);
+$(".fleche").append(fleche);
 
 
 fleche.click(function(){
@@ -134,4 +134,26 @@ $('html, body').animate({scrollTop:$(the_id).offset().top}, 'slow');//return fal
 
 $(fleche).click(function(){
   $('html, body').animate({scrollTop: '0px'}, 1000);
+});
+
+//fleche qui scroll jusqu' en bas du Jumbotron
+    $(document).ready(function() {
+	// On écoute le scroll sur la page
+    $('.fleche').hide();
+	$(document).scroll(function() {
+		// On récupère la hauteur de la page
+		var hautfen = $(window).height();
+		// On récupère la position du scroll
+		var posScroll = $(window).scrollTop();
+		// On calcule l'endroit à partir duquel on veut faire apparaître le bouton
+		var diff = hautfen - posScroll - (hautfen/5);
+       
+		if (diff < 0) {
+			// On fait apparaître le bouton en fondu sur 0.5s
+			$('.fleche').show(500);
+		} else {
+			// On fait disparaitre le bouton en fondu sur 0.5s
+			$('.fleche').hide(500);
+		}
+	});
 });
