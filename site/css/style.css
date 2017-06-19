@@ -1,6 +1,15 @@
 .display-none {
   display: none;
 }
+.margin-top{
+  margin-top: 40px;
+}
+.margin-top-form {
+  margin-top: 20px;
+}
+.margin-top-carousel {
+  margin-top:10px;
+}
 
 .rangee1 img {
   width: 165px;
@@ -12,7 +21,7 @@
 }
 /*ici style pour mes boutons reseaus sociaux*/
 .reseaux{
-   
+
     width: 100px;
     height: 30%;
     position: fixed;
@@ -26,7 +35,7 @@
     float: right;
     margin-top: 5px;
     margin-right: 5px;
-        
+
 }
 .btnRond i{
     color: white;
@@ -39,9 +48,9 @@
     width: 100px;
     height: 30px;
     border-radius: 0px 50px 50px 0px;
-    margin-bottom: 2px; 
+    margin-bottom: 2px;
     position: relative;
-    left: -70px;    
+    left: -70px;
 }
 .btnReseau:hover{
     background: blue;
@@ -423,14 +432,35 @@ ul li img {
   border-radius: 0px;
 }
 /*ici commence le style du footer*/
-
+#facebook {
+  position: relative;
+  height: 20px;
+  box-sizing: border-box;
+  padding: 1px 8px 1px 6px;
+  background-color: blue;
+  color: white;
+  border-radius: 3px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#twitter {
+  position: relative;
+  height: 20px;
+  box-sizing: border-box;
+  padding: 1px 8px 1px 6px;
+  background-color: rgb(57, 201, 232);
+  color: white;
+  border-radius: 3px;
+  font-weight: 500;
+  cursor: pointer;
+}
 #google {
   position: relative;
   height: 20px;
   box-sizing: border-box;
   padding: 1px 8px 1px 6px;
   background-color: red;
-  color: black;
+  color: white;
   border-radius: 3px;
   font-weight: 500;
   cursor: pointer;
@@ -442,10 +472,14 @@ ul li img {
   height: 40px;
   border: 2px solid grey;
   text-align: center;
+  position: relative;
+  top: -20px;
+  left: 40%;
+
 }
 
 #moncercle i {
-  max-width: 50%
+  margin-top: 10px;
 }
 
 .taille{
@@ -453,7 +487,7 @@ ul li img {
 
 }
 .tailleb {
-    width: 24%;
+    width: 22%;
 }
 
 @media (min-width: 768px){
