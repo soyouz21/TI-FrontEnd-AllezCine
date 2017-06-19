@@ -19,9 +19,8 @@
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
   width: 100%;
 }
-/*ici style pour mes boutons reseaus sociaux*/
+/*ici style pour mes boutons reseaux sociaux*/
 .reseaux{
-
     width: 100px;
     height: 30%;
     position: fixed;
@@ -30,21 +29,30 @@
 .btnRond{
     width: 20px;
     height: 20px;
-    background: blue;
+    background: white ;
     border-radius: 50%;
     float: right;
     margin-top: 5px;
     margin-right: 5px;
-
 }
 .btnRond i{
-    color: white;
     width: 5px;
     text-align: center;
     margin-left: 3px;
 }
+.btnRond .fa-facebook{
+  color: blue;
+}
+.btnRond .fa-twitter{
+  color: rgb(0, 170, 254);
+}
+.btnRond .fa-google {
+  color: red;
+}
+.btnRond .fa-dribbble {
+  color: pink;
+}
 .btnReseau{
-    background: black;
     width: 100px;
     height: 30px;
     border-radius: 0px 50px 50px 0px;
@@ -52,8 +60,31 @@
     position: relative;
     left: -70px;
 }
+.btnReseau-facebook {
+    background-color: blue;
+}
+.btnReseau-twitter {
+    background-color: rgb(0, 170, 254);
+}
+.btnReseau-google {
+    background-color: red;
+}
+.btnReseau-dribbble {
+    background-color: pink;
+}
+.btnReseau-facebook:hover {
+    background-color: blue;
+}
+.btnReseau-twitter:hover {
+    background-color: rgb(0, 170, 254);
+}
+.btnReseau-google:hover {
+    background-color: red;
+}
+.btnReseau-dribbble:hover {
+    background-color: pink;
+}
 .btnReseau:hover{
-    background: blue;
     animation-duration: 2s;
     animation-name: slidein;
 }
@@ -65,17 +96,14 @@
         left:0px;
     }
 }
-
 .newbtn {
   background-color: black;
   color: white;
   border-radius: 0px 20px 20px 0px;
 }
-
 .newbtn:hover {
   color: white;
 }
-
 .forget {
   display: block;
     position: absolute;
@@ -314,10 +342,14 @@ a {
   background-color: orange;
   height: 298px;
 }
-ul li img {
+#myCarousel a img {
   width: 165px;
   height: 244.28px;
   margin-right: 0;
+}
+.orange-back{
+  height: auto;
+  background-color: orange;
 }
 
 

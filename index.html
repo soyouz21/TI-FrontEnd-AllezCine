@@ -9,31 +9,36 @@
   <link rel="icon" type="image/png" href="site/image/AlleZiné-fav.png" />
   <link rel="stylesheet" href="site/bootstrap/css/bootstrap.min.css">
   <link href="site/fontawesome/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="bxslider-4-master/dist/jquery.bxslider.css">
   <link rel="stylesheet" href="site/css/style.css">
   <title>AlleZiné</title>
 </head>
 
 <body>
-  <!-- barre orange du dessus -->
+  <!--div de la fleche-->
   <div class="fleche"></div>
-
+  <!--div des réseaux sociaux-->
   <div class="reseaux">
-    <div class="btnReseau">
+    <div class="btnReseau btnReseau-facebook">
+      Facebook
       <div class="btnRond">
         <i class="fa fa-facebook" aria-hidden="true"></i>
       </div>
     </div>
-    <div class="btnReseau">
+    <div class="btnReseau btnReseau-twitter">
+      Twitter
       <div class="btnRond">
         <i class="fa fa-twitter" aria-hidden="true"></i>
       </div>
     </div>
-    <div class="btnReseau">
+    <div class="btnReseau btnReseau-google">
+      Google +
       <div class="btnRond">
         <i class="fa fa-google-plus" aria-hidden="true"></i>
       </div>
     </div>
-    <div class="btnReseau">
+    <div class="btnReseau btnReseau-dribbble">
+      Dribbble
       <div class="btnRond">
         <i class="fa fa-dribbble" aria-hidden="true"></i>
       </div>
@@ -41,7 +46,7 @@
 
 
   </div>
-
+  <!-- barre orange du dessus -->
   <div class="orange"></div>
   <!-- navlogo -->
   <div class="container">
@@ -382,7 +387,6 @@
         </div>
       </div>
     </div>
-
     <div class="container">
       <div class="row">
 
@@ -644,15 +648,15 @@
     <div class="container">
       <div class="row">
         <div class="col-md-1 invisible"></div>
-        <div class="col-md-10 paddd margin-top">
-          <div class="container">
+        <div class="col-md-10 margin-top">
+          <div class="container orange-back">
             <div class="row">
-              <div class="col-md-6 paddd">
+              <div class="col-md-6">
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FIOWVOOVOe8" frameborder="0" autoplay=1></iframe>
                 </div>
               </div>
-              <div class="col-md-6 orange-bck paddd">
+              <div class="col-md-6">
                 <h1 class="text-center">Les Gardiens de la Galaxy 2</h1>
                 <div class="container">
                   <div class="row">
@@ -836,22 +840,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="site/javascript/js.js"></script>
-  <script type="text/javascript" src="bxslider-4-master/dist/jquery.bxslider.js">
-  </script>
+  <script type="text/javascript" src="bxslider-4-master/dist/jquery.bxslider.js"></script>
   <script>
-    $(document).ready(function() {
-      $('.bxslider').bxSlider({
-        mode: 'horizontal',
-        moveSlides: 1,
-        slideMargin: 40,
-        infiniteLoop: true,
-        slideWidth: 660,
-        minSlides: 6,
-        maxSlides: 6,
-        speed: 800,
-      });
+  $(document).ready(function() {
+    $('.bxslider').bxSlider({
+      mode: 'horizontal',
+      moveSlides: 1,
+      slideMargin: 40,
+      infiniteLoop: true,
+      slideWidth: 660,
+      minSlides: 6,
+      maxSlides: 6,
+      speed: 800,
     });
+  });
   </script>
 </body>
-
 </html>

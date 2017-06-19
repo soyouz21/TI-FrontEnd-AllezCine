@@ -146,8 +146,8 @@ $(fleche).click(function(){
 		// On récupère la position du scroll
 		var posScroll = $(window).scrollTop();
 		// On calcule l'endroit à partir duquel on veut faire apparaître le bouton
-		var diff = hautfen - posScroll - (hautfen/5);
-       
+		var diff = hautfen - posScroll - (hautfen);
+
 		if (diff < 0) {
 			// On fait apparaître le bouton en fondu sur 0.5s
 			$('.fleche').show(500);
