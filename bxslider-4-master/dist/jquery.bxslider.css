@@ -71,6 +71,12 @@ ul.bxslider {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
+.bx-viewport {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+}
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
@@ -90,29 +96,28 @@ ul.bxslider {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
   left: 10px;
-  background: url('bxslider/dist/images/controls.png') no-repeat 0 -32px;
+  background: url('bxslider-4-master/dist/images/controls.png') no-repeat 0 -32px;
 }
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
   background-position: 0 0;
 }
-.bx-wrapper .bx-next {
+.bx-next {
   right: 10px;
-  background: url('bxslider/dist/images/controls.png') no-repeat -43px -32px;
+  background: url("bxslider-4-master/dist/images/controls.png") no-repeat -43px -32px;
 }
 .bx-wrapper .bx-next:hover,
 .bx-wrapper .bx-next:focus {
   background-position: -43px 0;
 }
 .bx-wrapper .bx-controls-direction a {
-  position: absolute;
-  top: 50%;
-  margin-top: -16px;
-  outline: 0;
-  width: 32px;
-  height: 32px;
-  text-indent: -9999px;
-  z-index: 9999;
+    position: absolute;
+    top: 0;
+    width: 32px;
+    height: 100%;
+    text-indent: -9999px;
+    z-index: 9999;
+    background-color: rgba(152, 153, 156, 0.27);
 }
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;

@@ -1,34 +1,179 @@
-h2{
-    text-align: center;
-    margin-top: 25%;
-}
-
-
-.designMickey{
-        width: 80px;
-        height: 80px;
-        margin-top: 25px;
-}
-.history{
-    float:left;
-    display: inline-block;
-}
-.design{
-
-    display: inline-block;
-}
-.position-img{
-    margin-left: 300px;
-}
-.text-footer{
-    margin-top: 10%;
-    text-align: center;
-}
 * {
+  font-family: "Roboto";
+  list-style: none;
+  text-decoration: none;
+  letter-spacing: 1px;
   box-sizing: border-box;
 }
 
-.row > .column {
+@font-face {}
+
+nav a {
+  color: black;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+  background-color: #EA5D5D;
+}
+.col-md-12 {
+  padding-bottom: 20px;
+}
+
+nav a:hover {
+  color: #f0ece1;
+}
+
+.absol {
+  position: relative;
+  margin-left: -365px;
+}
+
+.animations {
+  overflow: hidden;
+  height: 300px;
+}
+
+.animationhello {
+  width: 70%;
+  animation: 4s linear infinite mickeymarche;
+  animation-delay: 2s;
+  position: absolute;
+}
+
+.animationrun {
+  width: -300%;
+  right: -2400px;
+  position: absolute;
+  animation: 4s linear infinite mickeyrun;
+  animation-delay: 2s;
+}
+
+@keyframes mickeyrun {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-900%);
+  }
+}
+
+@keyframes mickeymarche {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+.badge {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.input-accumulateur {
+  border-radius: 20px 0px 0px 20px;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  text-align: center;
+  width: 200px;
+  height: 150px;
+  background-color: #0762f5;
+}
+
+.order {
+  border-radius: 20px 0px 0px 20px;
+  text-align: center;
+  width: 200px;
+  position: fixed;
+  top: 220px;
+  right: 0;
+  background-color: #0762f5;
+}
+.giffy {
+  border-radius: 20px 0px 0px 20px;
+  text-align: center;
+  width: 200px;
+  position: fixed;
+  top: 280px;
+  right: 0;
+}
+.mickeyshop {
+  width: 80%;
+}
+.mickeythank {
+  width: 80%;
+}
+
+.position-img {
+  transform: scaleX(-1);
+  float: right;
+  height: 400px;
+}
+
+.bordered {
+  border-right: 7px solid black;
+  padding-right: 0px;
+}
+
+.btn-presentation {
+  margin-bottom: 20px;
+}
+
+.designMickey {
+  float: left;
+  vertical-align: middle;
+  padding-top: 10px;
+  width: 30%;
+}
+
+.history {
+  float: left;
+  display: inline-block;
+}
+
+.design {
+  display: inline-block;
+}
+
+.text-footer {
+  margin-top: 10%;
+  text-align: center;
+}
+
+
+/*Biography*/
+
+#biography {
+  position: relative;
+}
+
+;
+.personnages {
+  position: absolute;
+}
+
+.background {
+  width: 100%;
+}
+
+
+/* lightbox*/
+
+.bord {
+  border: 1px solid black;
+  box-shadow: 10px 10px 10px #888888;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.row>.column {
   padding: 0 8px;
 }
 
@@ -41,9 +186,13 @@ h2{
 .column {
   float: left;
   width: 25%;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
+
 /* The Modal (background) */
+
 .modal {
   display: none;
   position: fixed;
@@ -57,7 +206,9 @@ h2{
   background-color: black;
 }
 
+
 /* Modal Content */
+
 .modal-content {
   position: relative;
   background-color: #fefefe;
@@ -67,7 +218,9 @@ h2{
   max-width: 1200px;
 }
 
+
 /* The Close Button */
+
 .close {
   color: white;
   position: absolute;
@@ -77,8 +230,7 @@ h2{
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
@@ -93,9 +245,10 @@ h2{
   margin-bottom: 50px;
 }
 
+
 /* Next & previous buttons */
-.prev,
-.next {
+
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -111,19 +264,24 @@ h2{
   -webkit-user-select: none;
 }
 
+
 /* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
+
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+
+.prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+
 /* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -132,7 +290,7 @@ h2{
   top: 0;
 }
 
-img {
+.column img {
   margin-bottom: -4px;
   width: 100%
 }
@@ -148,8 +306,7 @@ img {
   opacity: 0.6;
 }
 
-.active,
-.demo:hover {
+.active, .demo:hover {
   opacity: 1;
 }
 
@@ -159,4 +316,278 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+/* goodies */
+
+.block {
+  float: left;
+  margin: 20px;
+  border-radius: 4px;
+  width: 280px;
+  min-height: 430px;
+  background: #fff;
+  padding: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-shadow: 0 2px 55px rgba(0, 0, 0, 0.1);
+}
+
+.top {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 10px;
+}
+
+.top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.top a {
+  color: #9e9e9e;
+}
+
+.top a:hover {
+  color: #c7ccdb;
+}
+
+.converse {
+  padding: 2px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.middle {
+  margin-bottom: 40px;
+}
+
+.article {
+  width: 100%;
+}
+
+.bottom {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.heading {
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  letter-spacing: 0;
+}
+
+.info {
+  font-size: 14px;
+  color: #969696;
+  margin-bottom: 10px;
+}
+
+.style {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.old-price {
+  color: #f00;
+  text-decoration: line-through;
+}
+
+.panier {
+  width: 70%;
+}
+
+
+
+/* footer */
+
+.footer-top-layout {
+  background: #1c1c1c none repeat scroll 0 0;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+.OurBlog {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.footer-top-layout h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 21px;
+}
+
+.OurBlog>p {
+  color: #888888;
+}
+
+.post-blog-date::after {
+  background: #ffffff none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 50px;
+}
+
+.post-blog-date {
+  padding-bottom: 25px;
+  position: relative;
+}
+
+body {
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+}
+
+.footer-top-layout [class*="col-sm-"]:first-child {
+  padding: 0;
+}
+
+.footer-top-layout [class*="col-sm-"] {
+  border-right: 2px solid #333333;
+  padding: 0 0 0 28px;
+}
+
+.footer-top-layout {
+  color: #ffffff;
+}
+
+.footer-col-item {
+  min-height: 140px;
+}
+
+address {
+  color: #545454;
+}
+
+.footer-top-layout [class*="col-sm-"]:last-child {
+  border-right: medium none;
+}
+
+.footer-top-layout {
+  color: #ffffff;
+}
+
+body {
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-top-layout h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 21px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+body {
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+}
+
+.footer-col-item .item-contact a {
+  color: #545454;
+  display: inline-block;
+  margin-bottom: 7px;
+  width: 100%;
+}
+
+.footer-col-item .item-contact a .link-id {
+  color: #ffffff;
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+.footer-col-item span {
+  margin-left: 7px;
+}
+
+.footer-col-item .item-contact a {
+  color: #545454;
+}
+
+.footer-top-layout h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 21px;
+}
+
+.signUpNewsletter {
+  position: relative;
+}
+
+.signUpNewsletter .gt-email {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #666666;
+  border-radius: 0;
+  color: #ffffff;
+  height: 52px;
+}
+
+.signUpNewsletter .btn-go {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-color: #666666;
+  border-style: solid;
+  border-width: 0 0 0 1px;
+  bottom: 0;
+  color: #ffffff;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+  width: 52px;
+}
+
+.footer-bottom-layout {
+  background: #222222 none repeat scroll 0 0;
+  padding: 20px 0;
+  text-align: center;
+}
+.socialMedia-footer {
+  margin-bottom: 20px;
+}
+.socialMedia-footer>a {
+  display: inline-block;
+  margin: 0 8px;
+}
+.footer-bottom-layout {
+  text-align: center;
 }
