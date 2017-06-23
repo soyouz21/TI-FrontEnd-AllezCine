@@ -13,10 +13,11 @@ nav a {
 }
 
 nav {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   background-color: #EA5D5D;
 }
+
 .col-md-12 {
   padding-bottom: 20px;
 }
@@ -97,6 +98,7 @@ h2 {
   right: 0;
   background-color: #0762f5;
 }
+
 .giffy {
   border-radius: 20px 0px 0px 20px;
   text-align: center;
@@ -105,9 +107,11 @@ h2 {
   top: 280px;
   right: 0;
 }
+
 .mickeyshop {
   width: 80%;
 }
+
 .mickeythank {
   width: 80%;
 }
@@ -417,9 +421,8 @@ img.hover-shadow {
 }
 
 .panier {
-  width: 70%;
+  width: 40%;
 }
-
 
 
 /* footer */
@@ -581,13 +584,16 @@ body {
   padding: 20px 0;
   text-align: center;
 }
+
 .socialMedia-footer {
   margin-bottom: 20px;
 }
+
 .socialMedia-footer>a {
   display: inline-block;
   margin: 0 8px;
 }
+
 .footer-bottom-layout {
   text-align: center;
 }
