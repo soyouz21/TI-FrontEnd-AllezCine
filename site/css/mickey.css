@@ -1,21 +1,41 @@
 * {
-  font-family: "Roboto";
   list-style: none;
   text-decoration: none;
   letter-spacing: 1px;
   box-sizing: border-box;
+  cursor: url("cursor.gif"), pointer;
 }
 
-@font-face {}
+select, option, .cd-dropdown ul li span, .cd-dropdown>span, button, html input[type=button], input[type=reset], input[type=submit], .btn {
+  cursor: url("cursor.gif"), pointer;
+}
+
+body {
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+}
+
+@font-face {
+  font-family: "MICKEY";
+  src: url(MICKEY.ttf);
+}
 
 nav a {
   color: black;
 }
-
+.navbar-brand{
+  font-size: 25px;
+}
 nav {
+  font-family: "MICKEY";
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #EA5D5D;
+}
+
+.navbar {
+  margin-bottom: 0px;
 }
 
 .col-md-12 {
@@ -32,23 +52,22 @@ nav a:hover {
 }
 
 .animations {
+  background-color: #EA5D5D;
   overflow: hidden;
   height: 300px;
 }
 
 .animationhello {
-  width: 70%;
-  animation: 4s linear infinite mickeymarche;
-  animation-delay: 2s;
+  width: 100%;
+  animation: 8s linear infinite mickeymarche;
   position: absolute;
 }
 
 .animationrun {
-  width: -300%;
-  right: -2400px;
+  width: 100%;
+  left: 900%;
   position: absolute;
-  animation: 4s linear infinite mickeyrun;
-  animation-delay: 2s;
+  animation: 8s linear infinite mickeyrun;
 }
 
 @keyframes mickeyrun {
@@ -129,7 +148,10 @@ h2 {
 
 .btn-presentation {
   margin-bottom: 20px;
+  width: 40%;
 }
+
+btn-presentation:hover {}
 
 .designMickey {
   float: left;
@@ -153,19 +175,151 @@ h2 {
 }
 
 
-/*Biography*/
+/*presentation*/
 
+ul {
+  margin-top: 20px;
+}
+
+#Mickey, #Minnie, #Donald, #Daisy, #Pluto, #Dingo {
+  margin-top: 10px;
+}
+
+.titremickey {
+  font-family: "MICKEY";
+  color: #EA5D5D;
+}
+
+.titreminnie {
+  font-family: "MICKEY";
+  color: pink;
+}
+
+.titredonald {
+  font-family: "MICKEY";
+  color: blue;
+}
+
+.titredaisy {
+  font-family: "MICKEY";
+  color: violet;
+}
+
+.titrepluto {
+  font-family: "MICKEY";
+  color: yellow;
+}
+
+.titredingo {
+  font-family: "MICKEY";
+  color: orange;
+}
+
+.mickey {
+  background-color: #EA5D5D;
+  border-color: #EA5D5D;
+}
+
+.minnie {
+  background-color: pink;
+  border-color: pink;
+}
+
+.donald {
+  background-color: blue;
+  border-color: blue;
+}
+
+.daisy {
+  background-color: violet;
+  border-color: violet;
+}
+
+.pluto {
+  background-color: yellow;
+  border-color: yellow;
+}
+
+.dingo {
+  background-color: orange;
+  border-color: orange;
+}
+
+.mickey:hover, .minnie:hover, .donald:hover, .daisy:hover, .pluto:hover, .dingo:hover {
+  border-color: black
+}
+
+.nompersonnage {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 10px 10px 5px black;
+  margin-bottom: 30px;
+}
+
+
+/*Biography*/
+@media only screen and (min-width: 1170px){
+.cd-section {
+    padding: 0px;
+}
+}
 #biography {
   position: relative;
-}
-
-;
-.personnages {
-  position: absolute;
-}
-
-.background {
   width: 100%;
+}
+.maison-de-mickey{
+  position: relative;
+}
+.maisondemickey{
+  width: 100%;
+}
+.mickeybio {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+.daisybio {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+.donaldbio {
+  position: absolute;
+  top: 50%;
+  left: 66%;
+}
+.minniebio {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+}
+.personnage {
+  position: absolute;
+  top: 80%;
+  right: 42%
+}
+.titre {
+  position: absolute;
+  top: -4000%;
+  right: 40%;
+  font-size: 50px;
+  font-family: "MICKEY";
+}
+.cd-modal-action .btn2 {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5em;
+    color: #ffffff;
+    line-height: 4em;
+    white-space: nowrap;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: color 0.2s 0.3s, width 0.3s 0s;
+    -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
+    transition: color 0.2s 0.3s, width 0.3s 0s;
 }
 
 
@@ -465,12 +619,6 @@ img.hover-shadow {
   position: relative;
 }
 
-body {
-  color: #666666;
-  font-family: "Open Sans", sans-serif;
-  line-height: 24px;
-}
-
 .footer-top-layout [class*="col-sm-"]:first-child {
   padding: 0;
 }
@@ -500,11 +648,6 @@ address {
   color: #ffffff;
 }
 
-body {
-  color: #666666;
-  font-family: "Open Sans", sans-serif;
-}
-
 .footer-top-layout h4 {
   color: #ffffff;
   font-size: 18px;
@@ -517,12 +660,6 @@ body {
   font-weight: 500;
   line-height: 1.1;
   margin-top: 0;
-}
-
-body {
-  color: #666666;
-  font-family: "Open Sans", sans-serif;
-  line-height: 24px;
 }
 
 .footer-col-item .item-contact a {
@@ -597,4 +734,6 @@ body {
 .footer-bottom-layout {
   text-align: center;
 }
+
+
 /*
