@@ -44,7 +44,7 @@
 
 ##### 19 juin
 
-1. Début du vrai pair partening, nous avons tous les deux tous fait! :) 
+Début du vrai pair partening, nous avons tous les deux tous fait! :) 
 
 ## Difficulté
 ### Mika
