@@ -44,5 +44,12 @@
 
 ##### 19 juin
 
-Début du vrai pair partening XD Vive les consignes pas clair du tout. 
+1. Début du vrai pair partening, nous avons tous les deux tous fait! :) 
+
+## Difficulté
+### Mika
+1. Trouver et comprendre l'outil de cookie.
+2. Travailler en pair partening.
+3. Travailler à deux sur les mêmes fichiers et dossiers.
+3. Reprendre le code de l'autre pour continuer son travail.
 
