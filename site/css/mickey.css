@@ -12,16 +12,16 @@ select, option, .cd-dropdown ul li span, .cd-dropdown>span, button, html input[t
 
 body {
   color: #666666;
-  font-family: "Open Sans", sans-serif;
   line-height: 24px;
 }
 
 @font-face {
   font-family: "MICKEY";
-  src: url(MICKEY.ttf);
+  src: url(MICKEY.TTF);
 }
 
 nav a {
+  font-family: "MICKEY";
   color: black;
 }
 .navbar-brand{
@@ -151,8 +151,6 @@ h2 {
   width: 40%;
 }
 
-btn-presentation:hover {}
-
 .designMickey {
   float: left;
   vertical-align: middle;
@@ -176,7 +174,12 @@ btn-presentation:hover {}
 
 
 /*presentation*/
-
+#presentation, #photo, #goodies {
+    background-color: #689D71;
+}
+#presentation p {
+  color: white;
+}
 ul {
   margin-top: 20px;
 }
@@ -296,13 +299,13 @@ ul {
 }
 .personnage {
   position: absolute;
-  top: 80%;
+  top: 60%;
   right: 42%
 }
 .titre {
   position: absolute;
   top: -4000%;
-  right: 40%;
+  right: 30%;
   font-size: 50px;
   font-family: "MICKEY";
 }
@@ -582,7 +585,7 @@ img.hover-shadow {
 /* footer */
 
 .footer-top-layout {
-  background: #1c1c1c none repeat scroll 0 0;
+  background-color: #EA5D5D ;
   color: #ffffff;
   padding: 40px 0;
 }
@@ -677,6 +680,7 @@ address {
 
 .footer-col-item span {
   margin-left: 7px;
+  color: white;
 }
 
 .footer-col-item .item-contact a {
@@ -694,10 +698,10 @@ address {
 }
 
 .signUpNewsletter .gt-email {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  border: 1px solid #666666;
+  background: white none repeat scroll 0 0;
+  border: 1px solid black;
   border-radius: 0;
-  color: #ffffff;
+  color: black;
   height: 52px;
 }
 
@@ -707,7 +711,7 @@ address {
   border-style: solid;
   border-width: 0 0 0 1px;
   bottom: 0;
-  color: #ffffff;
+  color: black;
   font-size: 16px;
   position: absolute;
   right: 0;
@@ -717,7 +721,7 @@ address {
 }
 
 .footer-bottom-layout {
-  background: #222222 none repeat scroll 0 0;
+  background-color:rgb(79, 75, 75);
   padding: 20px 0;
   text-align: center;
 }
@@ -733,6 +737,9 @@ address {
 
 .footer-bottom-layout {
   text-align: center;
+}
+.copyright-tag {
+   color: white;
 }
 
 
