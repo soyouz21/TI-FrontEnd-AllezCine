@@ -1,498 +1,642 @@
 .display-none {
-  display: none;
+display : none;
 }
-
+.margin-top {
+margin-top : 40px;
+}
+.margin-top-form {
+margin-top : 20px;
+}
+.margin-top-carousel {
+margin-top : 10px;
+}
 .rangee1 img {
-  width: 165px;
-  height: 244.28px;
+width : 165px;
+height : 244.28px;
 }
-
-.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-  width: 100%;
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+width : 100%;
 }
-/*ici style pour mes boutons reseaus sociaux*/
-.reseaux{
-   
-    width: 100px;
-    height: 30%;
-    position: fixed;
-    top:30%;
+.social-icons .fa {
+font-size : 1.8em;
 }
-.btnRond{
-    width: 20px;
-    height: 20px;
-    background: blue;
-    border-radius: 50%;
-    float: right;
-    margin-top: 5px;
-    margin-right: 5px;
-        
+.social-icons .fa {
+width : 50px;
+height : 50px;
+line-height : 50px;
+text-align : center;
+color : #FFF;
+color : rgba(255, 255, 255, 0.8);
+transition : all 0.3s ease-in-out;
 }
-.btnRond i{
-    color: white;
-    width: 5px;
-    text-align: center;
-    margin-left: 3px;
+.social-icons.icon-circle .fa {
+border-radius : 50%;
 }
-.btnReseau{
-    background: black;
-    width: 100px;
-    height: 30px;
-    border-radius: 0px 50px 50px 0px;
-    margin-bottom: 2px; 
-    position: relative;
-    left: -70px;    
+.social-icons.icon-rounded .fa {
+border-radius : 5px;
 }
-.btnReseau:hover{
-    background: blue;
-    animation-duration: 2s;
-    animation-name: slidein;
+.social-icons.icon-flat .fa {
+border-radius : 0;
 }
-@keyframes slidein{
-    from{
-        left: -70px;
-    }
-    to{
-        left:0px;
-    }
+.social-icons .fa:hover, .social-icons .fa:active {
+color : #FFF;
+box-shadow : 1px 1px 3px #333;
 }
-
+.social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active {
+transform : scale(1.1);
+}
+.social-icons.icon-rotate .fa:hover, .social-icons.icon-rotate .fa:active {
+transform : scale(1.1) rotate(360deg);
+}
+.social-icons .fa-adn {
+background-color : #504e54;
+}
+.social-icons .fa-apple {
+background-color : #aeb5c5;
+}
+.social-icons .fa-android {
+background-color : #A5C63B;
+}
+.social-icons .fa-bitbucket, .social-icons .fa-bitbucket-square {
+background-color : #003366;
+}
+.social-icons .fa-bitcoin, .social-icons .fa-btc {
+background-color : #F7931A;
+}
+.social-icons .fa-css3 {
+background-color : #1572B7;
+}
+.social-icons .fa-dribbble {
+background-color : #F46899;
+}
+.social-icons .fa-dropbox {
+background-color : #018BD3;
+}
+.social-icons .fa-facebook, .social-icons .fa-facebook-square {
+background-color : #3C599F;
+}
+.social-icons .fa-flickr {
+background-color : #FF0084;
+}
+.social-icons .fa-foursquare {
+background-color : #0086BE;
+}
+.social-icons .fa-github, .social-icons .fa-github-alt, .social-icons .fa-github-square {
+background-color : #070709;
+}
+.social-icons .fa-google-plus, .social-icons .fa-google-plus-square {
+background-color : #CF3D2E;
+}
+.social-icons .fa-html5 {
+background-color : #E54D26;
+}
+.social-icons .fa-instagram {
+background-color : #A1755C;
+}
+.social-icons .fa-linkedin, .social-icons .fa-linkedin-square {
+background-color : #0085AE;
+}
+.social-icons .fa-linux {
+background-color : #FBC002;
+color : #333;
+}
+.social-icons .fa-maxcdn {
+background-color : #F6AE1C;
+}
+.social-icons .fa-pagelines {
+background-color : #241E20;
+color : #3984EA;
+}
+.social-icons .fa-pinterest, .social-icons .fa-pinterest-square {
+background-color : #CC2127;
+}
+.social-icons .fa-renren {
+background-color : #025DAC;
+}
+.social-icons .fa-skype {
+background-color : #01AEF2;
+}
+.social-icons .fa-stack-exchange {
+background-color : #245590;
+}
+.social-icons .fa-stack-overflow {
+background-color : #FF7300;
+}
+.social-icons .fa-trello {
+background-color : #265A7F;
+}
+.social-icons .fa-tumblr, .social-icons .fa-tumblr-square {
+background-color : #314E6C;
+}
+.social-icons .fa-twitter, .social-icons .fa-twitter-square {
+background-color : #32CCFE;
+}
+.social-icons .fa-vimeo-square {
+background-color : #229ACC;
+}
+.social-icons .fa-vk {
+background-color : #375474;
+}
+.social-icons .fa-weibo {
+background-color : #D72B2B;
+}
+.social-icons .fa-windows {
+background-color : #12B6F3;
+}
+.social-icons .fa-xing, .social-icons .fa-xing-square {
+background-color : #00555C;
+}
+.social-icons .fa-youtube, .social-icons .fa-youtube-play, .social-icons .fa-youtube-square {
+background-color : #C52F30;
+}
+.social-icons.icon-circle .fa {
+border-radius : 50%;
+}
+.social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active {
+transform : scale(1.1);
+}
+.social-icons.icon-rotate .fa:hover, .social-icons.icon-rotate .fa:active {
+transform : scale(1.1) rotate(360deg);
+}
+.reseaux {
+width : 100px;
+height : 30%;
+position : fixed;
+top : 30%;
+z-index : 9999;
+}
+.btnRond {
+width : 20px;
+height : 20px;
+background : white;
+border-radius : 50%;
+float : right;
+margin-top : 5px;
+margin-right : 5px;
+}
+.btnRond i {
+width : 5px;
+text-align : center;
+margin-left : 3px;
+}
+.btnRond .fa-facebook {
+color : blue;
+}
+.btnRond .fa-twitter {
+color : rgb(0, 170, 254);
+}
+.btnRond .fa-google {
+color : red;
+}
+.btnRond .fa-dribbble {
+color : pink;
+}
+.btnReseau {
+width : 100px;
+height : 30px;
+border-radius : 0 50px 50px 0;
+margin-bottom : 2px;
+position : relative;
+left : -70px;
+}
+.btnReseau-facebook {
+background-color : blue;
+}
+.btnReseau-twitter {
+background-color : rgb(0, 170, 254);
+}
+.btnReseau-google {
+background-color : red;
+}
+.btnReseau-dribbble {
+background-color : pink;
+}
+.btnReseau-facebook:hover {
+background-color : blue;
+}
+.btnReseau-twitter:hover {
+background-color : rgb(0, 170, 254);
+}
+.btnReseau-google:hover {
+background-color : red;
+}
+.btnReseau-dribbble:hover {
+background-color : pink;
+}
+.btnReseau:hover {
+animation-duration : 2s;
+animation-name : slidein;
+}
+@keyframes slidein {
+from {
+left : -70px;
+}
+to {
+left : 0;
+}
+}
 .newbtn {
-  background-color: black;
-  color: white;
-  border-radius: 0px 20px 20px 0px;
+background-color : black;
+color : white;
+border-radius : 0 20px 20px 0;
 }
-
 .newbtn:hover {
-  color: white;
+color : white;
 }
-
 .forget {
-  display: block;
-    position: absolute;
-    line-height: 24px;
-    font-size: 8px;
-    background: rgba(226, 226, 226, 0.59);
-    color: #9C9E9F;
-    border-radius: 2px;
-    padding: 0 8px;
-    right: 25%;
-    margin-top: -32px;
+display : block;
+position : absolute;
+line-height : 24px;
+font-size : 8px;
+background : rgba(226, 226, 226, 0.59);
+color : #9C9E9F;
+border-radius : 2px;
+padding : 0 8px;
+right : 25%;
+margin-top : -32px;
 }
-.modal-dialog{
-  margin: 0 auto;
+.modal-dialog {
+margin : 0 auto;
 }
 .btn-orange-login {
-  border-radius: 0px 0px 0px 0px;
-  background-color: orange;
-  color: white;
+border-radius : 0 0 0 0;
+background-color : orange;
+color : white;
 }
 .btn-orange-login:hover {
-  color: rgb(150, 0, 255);
+color : rgb(150, 0, 255);
 }
-
 .forget:hover {
-  font-size: 8px;
-  line-height: 20px;
-  height: 20px;
-  background-color: rgb(34, 224, 209);
-  color: black;
+font-size : 8px;
+line-height : 20px;
+height : 20px;
+background-color : rgb(34, 224, 209);
+color : black;
 }
-
 .image-social, .form-connection input {
-  width: 60%;
-  margin-top: 10px;
+width : 60%;
+margin-top : 10px;
 }
-
 #user {
-  height: 40px;
-  padding-left: 38px;
-  background: url(http://images.commeaucinema.com/popup/input_mail.png) top left no-repeat #fff;
+height : 40px;
+padding-left : 38px;
+background : url(http://images.commeaucinema.com/popup/input_mail.png) top left no-repeat #fff;
 }
 #emailaddress {
-  height: 40px;
-  padding-left: 38px;
-  background: url(http://images.commeaucinema.com/popup/input_pass.png) top left no-repeat #fff;
+height : 40px;
+padding-left : 38px;
+background : url(http://images.commeaucinema.com/popup/input_pass.png) top left no-repeat #fff;
 }
 #user:focus {
-  height: 40px;
-  padding-left: 38px;
-  background: url(http://images.commeaucinema.com/popup/input_mail.png) bottom left no-repeat #fff;
+height : 40px;
+padding-left : 38px;
+background : url(http://images.commeaucinema.com/popup/input_mail.png) bottom left no-repeat #fff;
 }
 #emailaddress:focus {
-  height: 40px;
-  padding-left: 38px;
-  background: url(http://images.commeaucinema.com/popup/input_pass.png) bottom left no-repeat #fff;
+height : 40px;
+padding-left : 38px;
+background : url(http://images.commeaucinema.com/popup/input_pass.png) bottom left no-repeat #fff;
 }
-
 .floatleft {
-  float: left;
-  margin-left: 20%
+float : left;
+margin-left : 20%;
 }
-
 .left {
-  margin-left: 20%;
+margin-left : 20%;
 }
-
 .right {
-  margin-right: 20%;
+margin-right : 20%;
 }
-
 .first {
-  width: 75%;
+width : 75%;
 }
 .fill {
-  height: auto;
+height : auto;
 }
-.bx-prev {
-  left: 10px;
-  background: url('bxslider/dist/images/controls.png') no-repeat 0 -32px;
+.bx-prev:hover, .bx-prev:focus {
+background-position : 0 0;
 }
-.bx-prev:hover,
-.bx-prev:focus {
-  background-position: 0 0;
-}
-.bx-next {
-  right: 10px;
-  background: url('bxslider/dist/images/controls.png') no-repeat -43px -32px;
-}
-.bx-next:hover,
-.bx-next:focus {
-  background-position: -43px 0;
+.bx-next:hover, .bx-next:focus {
+background-position : -43px 0;
 }
 .form-control-nav {
-  margin: -5px;
-  border-radius: 20px 0px 0px 20px;
-  background-color: rgb(223, 223, 223);
-  color: rgb(150, 146, 138);
+margin : -5px;
+border-radius : 20px 0 0 20px;
+background-color : rgb(223, 223, 223);
+color : rgb(150, 146, 138);
 }
-
 .btn-orange {
-  border-radius: 0px 0px 0px 0px;
-  background-color: orange;
-  width: 15%;
-  color: white;
+border-radius : 0 0 0 0;
+background-color : orange;
+width : 15%;
+color : white;
 }
 .btn-orange-featured {
-  border-radius: 0px 0px 0px 0px;
-  background-color: rgb(211, 212, 218)grey;
-  color: black;
+border-radius : 0 0 0 0;
+color : black;
 }
 .btn-orange-featured:hover {
-  background-color: orange;
-  color: white;
+background-color : orange;
+color : white;
 }
-
 .rangee1 {
-  padding-top: 10px;
+padding-top : 10px;
 }
-
 .bordered {
-  border: 0.5px solid rgb(145, 145, 145);
-  border-radius: 20px 20px 20px 20px;
+border : rgb(145, 145, 145) solid 0.5px;
+border-radius : 20px 20px 20px 20px;
 }
-
 .space-between {
-  display: flex;
-  justify-content: space-between;
+display : flex;
+justify-content : space-between;
 }
-
 .text1 {
-  float: left;
-  text-align: left;
+float : left;
+text-align : left;
 }
-
 .text2 {
-  text-align: right;
+text-align : right;
 }
-
-
-/*ici commence le css de la featured movies de la 2eme série*/
-
 .bouton {
-  display: block;
+display : block;
 }
-
 .img-row img {
-  width: 165px;
-  height: 244.28px;
-  padding-top: 10px;
+width : 165px;
+height : 244.28px;
+padding-top : 10px;
 }
-
 .petitbouton {
-  width: 100%;
-  height: auto;
-  text-align: center;
+width : 100%;
+height : auto;
+text-align : center;
 }
-
 .padding {
-  margin: 0;
+margin : 0;
 }
-
 figure img {
-  width: 100px;
+width : 100px;
 }
-
 .padding {
-  padding-top: 25px;
+padding-top : 25px;
 }
-
 .orange {
-  background-color: orange;
-  width: 100%;
-  height: 4px;
+background-color : orange;
+width : 100%;
+height : 4px;
 }
-
 .container {
-  padding: 0;
-  width: 100%;
+padding : 0;
+width : 100%;
 }
-
-.nav>li>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-  color: white;
-  background-color: black;
+.nav > li > a:hover, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+color : white;
+background-color : black;
 }
-
 .oranges {
-  color: black;
-  background-color: rgb(228, 153, 64)
+color : black;
+background-color : rgb(228, 153, 64);
 }
-
 a {
-  color: black;
+color : black;
 }
-
-
-/* ICI le code des 4 cadres en bas */
-
 .black-back {
-  background-color: rgb(44, 47, 66);
-  color: white;
-  height: 200px;
+background-color : rgb(44, 47, 66);
+color : white;
+height : 200px;
 }
-
 .div-4 {
-  margin-left: 15px;
-  margin-right: 15px;
+margin-left : 15px;
+margin-right : 15px;
 }
-
 .div-4-left {
-  margin-right: 15px;
+margin-right : 15px;
 }
-
 .div-4-right {
-  margin-left: 15px;
+margin-left : 15px;
 }
-
-
-/* ligne de code pour le changer la fleche sur le menu déroulant en js */
-
 .caret-up {
-  width: 0;
-  height: 0;
-  border-left: 4px solid rgba(0, 0, 0, 0);
-  border-right: 4px solid rgba(0, 0, 0, 0);
-  border-bottom: 4px solid;
-  display: inline-block;
-  margin-left: 2px;
-  vertical-align: middle;
+width : 0;
+height : 0;
+border-left : 4px solid rgba(0, 0, 0, 0);
+border-right : 4px solid rgba(0, 0, 0, 0);
+border-bottom : 4px solid;
+display : inline-block;
+margin-left : 2px;
+vertical-align : middle;
 }
-
-
-/* Ligne de code pour le carrousel pour la section shop */
-
 .orange-bck {
-  background-color: orange;
-  height: 298px;
+background-color : orange;
+height : 298px;
 }
-ul li img {
-  width: 165px;
-  height: 244.28px;
-  margin-right: 0;
+#myCarousel a img {
+width : 165px;
+height : 244.28px;
+margin-right : 0;
 }
-
-
-/* Removes the default 20px margin and creates some padding space for the indicators and controls */
-
+.orange-back {
+height : auto;
+background-color : orange;
+}
+.flechenext {
+position : absolute;
+}
+.flecheprev {
+position : absolute;
+}
 .carousel {
-  margin-bottom: 0;
+margin-bottom : 0;
 }
-
-
-/* Reposition the controls slightly */
-
 .carousel-control {
-  left: -12px;
+left : -12px;
 }
-
 .carousel-control.right {
-  right: -12px;
+right : -12px;
 }
-
-
-/* Changes the position of the indicators */
-
 .carousel-indicators {
-  right: 50%;
-  top: auto;
-  bottom: 0px;
-  margin-right: -19px;
+right : 50%;
+top : auto;
+bottom : 0;
+margin-right : -19px;
 }
-
-
-/* Changes the colour of the indicators */
-
 .carousel-indicators li {
-  background: #c0c0c0;
+background : #c0c0c0;
 }
-
 .carousel-indicators .active {
-  background: #333333;
+background : #333333;
 }
 .bx-wrapper .bx-pager {
-  text-align: center;
-  font-size: .85em;
-  font-family: Arial;
-  font-weight: bold;
-  color: #666;
-  padding-top: 20px;
+text-align : center;
+font-size : 0.85em;
+font-family : Arial;
+font-weight : bold;
+color : #666;
+padding-top : 20px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #666;
-  text-indent: -9999px;
-  display: block;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  outline: 0;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+background : #666;
+text-indent : -9999px;
+display : block;
+width : 10px;
+height : 10px;
+margin : 0 5px;
+outline : 0;
+border-radius : 5px;
 }
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bx-wrapper .bx-pager.bx-default-pager a.active,
-.bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: #000;
-}
-.bx-wrapper .bx-pager-item,
-.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
-  display: inline-block;
-  vertical-align: bottom;
-  *zoom: 1;
-  *display: inline;
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+background : #000;
 }
 .bx-wrapper .bx-pager-item {
-  font-size: 0;
-  line-height: 0;
+font-size : 0;
+line-height : 0;
 }
-/*Jumbotron*/
-
 .mini-jumbo {
-  height: auto;
+height : auto;
 }
-.mini-jumbo>li>a {
-  padding: 0;
+.mini-jumbo > li > a {
+padding : 0;
 }
 .bloc-orange-titre {
-  width: 10px;
-  background-color: orange;
-  padding-left: 10px
+width : 10px;
+background-color : orange;
+padding-left : 10px;
 }
 .mini-jumbo img {
-  width: 100%;
+width : 100%;
 }
 .withoutbordered {
-  margin: 0;
+margin : 0;
 }
 .paddd {
-  padding: 0;
+padding : 0;
 }
 #myCarousel {
-  margin: 0;
-  float: left;
-  width: 100%;
+margin : 0;
+float : left;
+width : 100%;
 }
 #myCarousel .nav a small {
-  display: flex;
-  flex-direction: row;
+display : flex;
+flex-direction : row;
 }
 #myCarousel .nav {
-  background: #eee;
+background : #eee;
 }
 #myCarousel .nav a {
-  border-radius: 0px;
+border-radius : 0;
 }
-/*ici commence le style du footer*/
-
+#facebook {
+position : relative;
+height : 20px;
+box-sizing : border-box;
+padding : 1px 8px 1px 6px;
+color : white;
+border-radius : 0;
+font-weight : 500;
+cursor : pointer;
+}
+#twitter {
+position : relative;
+height : 20px;
+box-sizing : border-box;
+padding : 1px 8px 1px 6px;
+color : white;
+border-radius : 0;
+font-weight : 500;
+cursor : pointer;
+}
 #google {
-  position: relative;
-  height: 20px;
-  box-sizing: border-box;
-  padding: 1px 8px 1px 6px;
-  background-color: red;
-  color: black;
-  border-radius: 3px;
-  font-weight: 500;
-  cursor: pointer;
+position : relative;
+height : 20px;
+box-sizing : border-box;
+padding : 1px 8px 1px 6px;
+color : white;
+border-radius : 0;
+font-weight : 500;
+cursor : pointer;
 }
-#moncercle {
-  background: orange;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  border: 2px solid grey;
-  text-align: center;
+.blueclaire {
+background-color : rgb(57, 164, 232);
+height : 20px;
+width : 50%;
 }
-
-#moncercle i {
-  max-width: 50%
+.bleufonce {
+background-color : rgb(44, 70, 208);
+height : 20px;
+width : 50%;
 }
-
-.taille{
-    width: 75%;
-
+.rougeclaire {
+background-color : rgb(233, 115, 115);
+height : 20px;
+width : 50%;
+}
+#twitter b, #facebook b, #google b {
+padding-left : 10px;
+}
+#twitter, #facebook, #google {
+width : 50%;
+}
+.moncercle {
+background : orange;
+border-radius : 50%;
+width : 40px;
+height : 40px;
+border : grey solid 2px;
+text-align : center;
+position : relative;
+top : -20px;
+left : 40%;
+}
+.moncercle i {
+margin-top : 10px;
+}
+.lastbutton {
+border-radius : 0 0 0 0;
+background-color : rgb(44, 47, 66);
+color : white;
+margin-left : 15px;
+}
+.lastbutton:hover {
+color : white;
+}
+.taille {
+width : 75%;
 }
 .tailleb {
-    width: 24%;
+width : 22%;
 }
-
-@media (min-width: 768px){
-    .form-inline .form-control{
-        width: 75%;
+@media (min-width:768px) {
+.form-inline .form-control {
+width : 75%;
 }
-    }
-
-    .img-footer{
-    width: 50px;
-    height: auto;
-    float: right;
-    margin-top: 55px;
 }
-.texte-footer1{
-    float: left;
+.img-footer {
+width : 100px;
+height : auto;
+float : right;
+margin-top : 55px;
 }
-
-.texte-footer{
-    float: right;
+.texte-footer1 {
+float : left;
 }
-.texte-footer p{
-    float: left;
-    margin-left: 20px;
+.texte-footer {
+float : right;
 }
-.borderw{
-    border: 1px solid white;
-    width: 100%;
-    padding: 6px;
+.texte-footer p {
+float : left;
+margin-left : 20px;
 }
-h3{
-    color: orange;
+.borderw {
+border : white solid 1px;
+width : 100%;
+padding : 6px;
 }
-.fleche{
-
-    width: 50px;
-    height: 50px;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-
+h3 {
+color : orange;
+}
+.fleche {
+width : 50px;
+height : 50px;
+right : 0;
+bottom : 0;
+position : fixed;
 }

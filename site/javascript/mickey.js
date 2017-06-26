@@ -1,4 +1,34 @@
-$(label).append(){
-    if $(this).css("background color","yellow");
-}
-//ici Mike j'ai essayé de commencer le js pour "ce champ doit renseigné" mais pas terminé
+$(".onglets").hide();
+$("#presentation").show();
+$(".input-accumulateur").hide();
+
+$(".presentation").click(function(){
+  $(".onglets").hide();
+  $("#presentation").show();
+  $(".input-accumulateur").hide();
+});
+$(".biography").click(function(){
+  $(".onglets").hide();
+  $("#biography").show();
+  $(".input-accumulateur").hide();
+});
+$(".goodies").click(function(){
+  $(".input-accumulateur").show();
+  $(".onglets").hide();
+  $("#goodies").show();
+});
+$(".contact").click(function(){
+  $(".onglets").hide();
+  $("#contact").show();
+  $(".input-accumulateur").hide();
+});
+$(".photo").click(function(){
+  $(".onglets").hide();
+  $("#photo").show();
+  $(".input-accumulateur").hide();
+});
+$(".thanks").hide();
+$(".preview").click(function(){
+  $(".shops").hide();
+  $(".thanks").show();
+});

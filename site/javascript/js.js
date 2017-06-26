@@ -1,3 +1,30 @@
+// code pour déterminer l'age d'un utilisateur
+$(document).ready( function() {
+  var txt;
+  var r = confirm("En pressant \"OK\", vous confirmez avoir 18ans et plus!");
+  if (r == true) {
+      window.cookieconsent.initialise({
+          "palette": {
+              "popup": {
+                  "background": "#eb6c44",
+                  "text": "#ffffff"
+              },
+              "button": {
+                  "background": "#f5d948"
+              }
+          },
+          "position": "top",
+          "static": true,
+          "content": {
+              "message": "En poursuivant votre naviguation, vous acceptez le dépôt de cookies tiers destinés à vous proposer des vidéos, des boutons de partage, des remontées de contenus de plateformes sociales.",
+              "dismiss": "J'accepte!",
+              "link": "Lire +"
+          }
+      })
+  } else {
+      window.location.assign("test.html");
+  }
+  });
 
 // menu déroulant
 $(function () {
@@ -19,7 +46,6 @@ $(document).ready( function() {
     $('#myCarousel').carousel({
 		interval:   4000
 	});
-
 	var clickEvent = false;
 	$('#myCarousel').on('click', '.nav a', function() {
 			clickEvent = true;
@@ -98,7 +124,7 @@ $("#moinsdefilms").click(function(){
 })
 
 //ici code cookies
- /* window.addEventListener("load", function() {
+ window.addEventListener("load", function() {
             window.cookieconsent.initialise({
                 "palette": {
                     "popup": {
@@ -117,7 +143,7 @@ $("#moinsdefilms").click(function(){
                     "link": "Lire +"
                 }
             })
-        });*/
+        });
 
 //ici fleche vers le haut
 var fleche=document.createElement("IMG");
@@ -146,8 +172,8 @@ $(fleche).click(function(){
 		// On récupère la position du scroll
 		var posScroll = $(window).scrollTop();
 		// On calcule l'endroit à partir duquel on veut faire apparaître le bouton
-		var diff = hautfen - posScroll - (hautfen/5);
-       
+		var diff = hautfen - posScroll - (hautfen);
+
 		if (diff < 0) {
 			// On fait apparaître le bouton en fondu sur 0.5s
 			$('.fleche').show(500);
@@ -157,3 +183,21 @@ $(fleche).click(function(){
 		}
 	});
 });
+
+
+// code pour la partie carrosel shop vidéo
+
+$(".bay").hide();
+$(".nemo").hide();
+$(".bay-img").click(function(){
+  $(".shop-video").hide();
+  $(".bay").show();
+});
+$(".nemo-img").click(function(){
+  $(".shop-video").hide();
+  $(".nemo").show();
+})
+$(".wonder-img").click(function(){
+  $(".shop-video").hide();
+  $(".wonder").show();
+})
