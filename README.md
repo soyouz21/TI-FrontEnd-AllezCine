@@ -42,9 +42,9 @@
 2. Michael  : Création de la partie shop
 
 
-##### 19 juin
+##### 19 juin au 27 juin
 
-Début du vrai pair partening, nous avons tous les deux tous fait! :) 
+Début du vrai pair partening, nous avons donc tous les deux fait le reste du travail! :) 
 
 ## Difficulté
 ### Mika
