@@ -6,11 +6,11 @@
 2. Michael Mesmaeker
 
 ## Link
-http://rivanos.esy.es/bouteille-verre.jpg
-http://rivanos.esy.es/chute-deau.jpg
-http://rivanos.esy.es/evian-gaultier.jpg
-http://rivanos.esy.es/icon-facebook.jpg
-http://rivanos.esy.es/logo_evian.jpg
+1. http://rivanos.esy.es/bouteille-verre.jpg
+2. http://rivanos.esy.es/chute-deau.jpg
+3. http://rivanos.esy.es/evian-gaultier.jpg
+4. http://rivanos.esy.es/icon-facebook.jpg
+5. http://rivanos.esy.es/logo_evian.jpg
 
 ## Répartirtion du travail
 
