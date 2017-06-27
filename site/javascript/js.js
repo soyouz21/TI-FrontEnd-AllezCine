@@ -22,7 +22,7 @@ $(document).ready( function() {
           }
       })
   } else {
-      window.location.assign("test.html");
+      window.location.assign("site/index.html");
   }
   });
 
