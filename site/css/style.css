@@ -1,3 +1,26 @@
+/*Media queries*/
+@media screen and (max-width: 1000px) {
+  #Film {
+    display: none;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .blueclaire,.bleufonce,.rougeclaire {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+    #Contacts {
+    display: none;
+  }
+}
+@media screen and (max-width: 1155px) {
+  .texte-footer{
+    display:none;
+  }
+}
+@media screen and (max-width: px)
+
 .display-none {
 display : none;
 }
@@ -13,6 +36,7 @@ margin-top : 10px;
 .rangee1 img {
 width : 165px;
 height : 244.28px;
+padding-top: 30px;
 }
 .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
 width : 100%;
@@ -328,7 +352,6 @@ color : rgb(150, 146, 138);
 .btn-orange {
 border-radius : 0 0 0 0;
 background-color : orange;
-width : 15%;
 color : white;
 }
 .btn-orange-featured {
@@ -361,8 +384,8 @@ text-align : right;
 display : block;
 }
 .img-row img {
-width : 165px;
-height : 244.28px;
+width : 130px;
+height : 210px;
 padding-top : 10px;
 }
 .petitbouton {
@@ -599,10 +622,10 @@ margin-left : 15px;
 color : white;
 }
 .taille {
-width : 75%;
+width : 70%;
 }
-.tailleb {
-width : 22%;
+.tailleb{
+  width: 20%;
 }
 @media (min-width:768px) {
 .form-inline .form-control {
