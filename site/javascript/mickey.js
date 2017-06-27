@@ -51,10 +51,10 @@ function myFunction() {
   document.getElementById("order").value = "Total : " + txt + "$";
 }
 function openModal() {
-  document.getElementById('myModal').style.display = "block";
+  document.getElementById('myModalS').style.display = "block";
 }
 function closeModal() {
-  document.getElementById('myModal').style.display = "none";
+  document.getElementById('myModalS').style.display = "none";
 }
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -87,3 +87,4 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 // code pour le présentation
+// code pour le tooltip
