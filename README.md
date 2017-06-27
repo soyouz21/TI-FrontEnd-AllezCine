@@ -54,6 +54,8 @@ Début du vrai pair partening, nous avons donc tous les deux fait le reste du tr
 3. Travailler à deux sur les mêmes fichiers et dossiers.
 3. Reprendre le code de l'autre pour continuer son travail.
 
+
+
 ### Miriam
 1. Trouver les solutions aux différents soucis (notamment en JS et même en HTML et CSS!), car manque de pratique.
 2. J'ai eu des ambitions inférieurs à ceux de mon partenaire.
